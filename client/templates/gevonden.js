@@ -1,10 +1,9 @@
 Template.gevonden.helpers({
   images: function () {
-    if (!$.isEmptyObject(Meteor.user().profile)) {
-      return Meteor.user().profile.image
-    }; 
-    //Images.find(); // Where Images is an FS.Collection instance
-  }
+
+      return
+    }
+
 });
 
 Template.gevonden.events({
@@ -20,7 +19,6 @@ Template.gevonden.events({
             var imagesURL = {
               "profile.image": "/cfs/files/images/" + fileObj._id
             };
-            
           }
         });
      });
