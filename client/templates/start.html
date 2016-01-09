@@ -1,20 +1,23 @@
 <template name="home">
-	
+	<div class="template-container-home">
+		
+		<h1>Hugsafari<span>.</span></h1>
+		
+		<div class="photostream">
+			<img src="/images/example.png" alt="">
+		</div>
+		<div class="container">
+			{{#unless currentUser}}
+				<div id="login" class="login">
+					{{> loginButtons}}
+				</div>
+			{{/unless}}
 
-	<div class="photostream">
-		<img src="/images/example.png" alt="">
-	</div>
-	<div class="container">
-		{{#unless currentUser}}
-			<div id="login" class="login">
-				{{> loginButtons}}
-			</div>
-		{{/unless}}
-
-		{{#if currentUser}}
-			{{#if userinteam}}
-				{{> teamsInlog }}
+			{{#if currentUser}}
+				{{#if userinteam}}
+					{{> teamsInlog }}
+				{{/if}}
 			{{/if}}
-		{{/if}}
+		</div>
 	</div>
 </template>

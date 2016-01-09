@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="375px" height="667px" viewBox="0 0 375 667" enable-background="new 0 0 375 667" xml:space="preserve">
+<g id="teamleden_toevoegen_bg">
+	<polygon fill="#79E425" points="0,-1 200.564,-1 375,-1 375,667 196.22,667 0,667 	"/>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" width="375" height="667"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g display="none" clip-path="url(#SVGID_2_)">
+			<ellipse display="inline" fill="#DCDCDC" cx="301.45" cy="165.25" rx="147.432" ry="147.211"/>
+			<ellipse display="inline" fill="#E7E7E7" cx="301.45" cy="165.25" rx="109.828" ry="109.664"/>
+			<ellipse display="inline" fill="#EEEEEE" cx="301.45" cy="165.25" rx="72.773" ry="72.664"/>
+			<ellipse display="inline" fill="#F6F6F6" cx="301.45" cy="165.25" rx="38.547" ry="38.489"/>
+		</g>
+		<g clip-path="url(#SVGID_2_)">
+			<defs>
+				<polygon id="SVGID_3_" points="0,-0.278 200.83,-1.278 375,-0.278 375,667 196.22,667 0,667 				"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  overflow="visible"/>
+			</clipPath>
+			<g id="overzicht_alt_bg_43_" clip-path="url(#SVGID_4_)">
+				<g>
+					<ellipse fill="#68C322" cx="9.228" cy="399.722" rx="134.08" ry="133.879"/>
+					<ellipse fill="#6BC823" cx="9.228" cy="399.722" rx="99.882" ry="99.732"/>
+					<ellipse fill="#70D224" cx="9.228" cy="399.722" rx="66.182" ry="66.083"/>
+					<ellipse fill="#75DC24" cx="9.228" cy="399.722" rx="35.056" ry="35.003"/>
+				</g>
+			</g>
+			<g id="overzicht_alt_bg_42_" clip-path="url(#SVGID_4_)">
+				<g>
+					<ellipse fill="#68C322" cx="210.053" cy="80.634" rx="44.378" ry="44.312"/>
+					<ellipse fill="#6BC823" cx="210.053" cy="80.634" rx="33.059" ry="33.01"/>
+					<ellipse fill="#70D224" cx="210.053" cy="80.634" rx="21.905" ry="21.872"/>
+					<ellipse fill="#75DC24" cx="210.053" cy="80.634" rx="11.875" ry="11.858"/>
+				</g>
+			</g>
+			<g id="overzicht_alt_bg_41_" clip-path="url(#SVGID_4_)">
+				<g>
+					<ellipse fill="#68C322" cx="390.23" cy="269.526" rx="110.375" ry="110.21"/>
+					<ellipse fill="#6BC823" cx="390.23" cy="269.526" rx="82.223" ry="82.1"/>
+					<ellipse fill="#70D224" cx="390.23" cy="269.526" rx="54.481" ry="54.4"/>
+					<ellipse fill="#75DC24" cx="390.23" cy="269.526" rx="29.536" ry="29.492"/>
+				</g>
+			</g>
+			<g clip-path="url(#SVGID_4_)">
+				<path fill="#75DC24" d="M375,481.54l-58.525-71.305l-15.055,53.919l-49.968,36.606l-23.164-33.768L200,491.211v51.7
+					c0,0-26.275,22.312-30.275,21.641c-4-0.672-70.45-11.656-70.45-11.656l35.103,49.887l-2.964,29.886l-40.58,34.052L375,666.726
+					V481.54z"/>
+				<polygon fill="#70D224" points="337.725,475.512 312.587,548.902 244.268,523.44 239.859,532.926 221.404,528.433 
+					215.427,567.374 160.438,583.35 134.444,578.358 149.447,611.732 144.448,651.249 118.449,656.241 108.829,666.722 375,666.726 
+					375,515.702 				"/>
+				<polygon fill="#6BC823" points="349.725,519.917 375,515.702 375,666.726 127.076,666.722 168.337,657.739 173.393,625.038 
+					159.421,600.45 221.935,587.906 230.942,549.432 266.446,583.865 269.948,563.388 328.086,607.318 				"/>
+				<polygon fill="#68C322" points="243.501,649.89 238.449,612.051 292.949,621.986 342.949,630.572 360.949,577.899 
+					371.225,605.837 375,559.64 375,667 220.334,667 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

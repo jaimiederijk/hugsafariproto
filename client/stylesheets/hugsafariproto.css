@@ -1,12 +1,175 @@
+/*standaard --- Roos*/
+body, html {
+	padding: 0 0;
+	margin: 0 0;
+	font-family: "Futura";
+}
+
+h1, h2, h3, h4 {
+	font-weight: 200;
+	color:white;
+	
+}
+h1 {
+	font-size: 4.23em;
+	text-align:center;
+	margin: 0 0;
+}
+h2 {
+	font-size: 2.61em;
+}
+
+h3 {
+	font-size: 1.61em;
+}
+
+
+p {
+	font-weight: 100;
+	font-size:1em;
+}
+ul {
+	padding: 0 0;
+}
+li {
+	list-style: none;
+	
+}
+li > a, button {
+	font-family: "futura";
+	font-size:1em;
+	text-decoration:none;
+	display:block;
+	padding:.5em 1em;
+	border:none;
+	color:white;
+	background-color: #79E425;
+	text-align:center;
+	width: 80%;
+	max-width: 300px;
+	margin:.5em auto;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+
+}
+
 /* CSS declarations go here */
+
+
 .button {
 	background-color: green;
 	padding: 1em;
 }
 img {
-	width: 40%;
+	max-width: 600px;
 }
-/*roos test*/
 
 
-/*hellooo*/
+/*startpagina ---- Roos*/
+
+.template-container-home {
+	box-sizing: border-box;
+	min-height:150vh;
+	background:url(images/start_bg.svg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.template-container-teamsInlog {
+	margin-top:40vh;
+	margin-bottom:20vh;
+}
+
+.template-container-home h1 {
+	margin: 0 0;
+	padding: 1em 0;
+	text-align: center;
+}
+.template-container-home h1 span {
+	color:#ED7425;
+}
+
+
+/*Team aanmelden formulier --- Roos*/
+.template-container-teamAanmelden {
+	background:url(images/teamAanmelden_bg.svg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height:100vh;
+}
+.template-container-teamAanmelden label {
+	display:none;
+}
+.template-container-teamAanmelden button {
+	margin-top:1em;
+}
+
+.template-container-teamAanmelden input[type="text"]{
+	border:none;
+	width:80vw;
+	text-align: center;
+	font-family: "futura";
+	font-size: 1em;
+	display:block;
+	padding:.5em 0;
+	margin:0 auto;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+}
+
+.noImage {
+	width:80vw;
+	height:80vw;
+	border:10px solid white;
+	background:url(images/foto_achtergrond_tekst2.png);
+	background-size: 100% 100%;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	margin:.5em auto;
+	text-align: center;
+}
+
+.imageView a {
+	display:block;
+	text-align: center;
+}
+.imageView a img {
+	width:80vw;
+	border:10px solid white;
+	background:url(images/foto_achtergrond_tekst2.png);
+	background-size: 100% 100%;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	margin:.5em auto;
+	text-align: center;
+	
+}
+/*Team aanmelden: Teamleden ---Roos*/
+.template-container-teamToevoegen {
+	box-sizing: border-box;
+	min-height:100vh;
+	background:url(images/teamToevoegen_bg.svg);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}
+.template-container-teamToevoegen span{
+font-family: "futura";
+	font-size:1em;
+	text-decoration:none;
+	display:block;
+	padding:.5em 1em;
+	border:none;
+	color:white;
+	background-color: #ED7425;
+	text-align:center;
+	width: 80%;
+	max-width: 300px;
+	margin:.5em auto;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+}
