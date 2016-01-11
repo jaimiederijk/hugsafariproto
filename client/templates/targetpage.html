@@ -1,16 +1,75 @@
 <template name="targetPagina">
-	<div><h2>Doelwit van de {{teamname}}</h2>
+	<div class="template-container-targetPagina">
+   <div><h2>Doelwit van de {{teamname}}</h2>
       <a href={{images}} target="_blank"><img src={{images}} alt="" class="thumbnail" /></a>
-  	</div>
-  	<ul>
-  		<li><a href="{{pathFor 'gevonden'}}">Gevonden</a></li>
-  		<li><a href="{{pathFor 'challenges'}}">Challenges</a></li>
-  	</ul>
+    </div>
+    <ul>
+      <li><a class="knop" href="{{pathFor 'gevonden'}}">Gevonden</a></li>
+      <li><a class="knop" href="{{pathFor 'challenges'}}">Challenges</a></li>
+    </ul>
 
-  	<div>
-  		<h2>Hints</h2>
+    <div>
+      <h2>Hints</h2>
 
-
-  	</div>
+      <ul class="hints-list">
+        <li  class="hint-done"><a href="#">
+            <div>
+              <p>15</p>
+            </div>
+            <img src="images/hint_camping_wit.svg" alt="">
+            <p>Camping</p>
+          </a></li>
+        <li><a href="">
+            <div>
+              <p>30</p>
+            </div>
+            <img src="images/hint_locatie_groen.svg" alt="">
+            <p>Locatie</p>
+          </a></li>
+          <li><a href="#">
+            <div>
+              <p>15</p>
+            </div>
+            <img src="images/hint_voorstelling_groen.svg" alt="">
+            <p>Voorstelling</p>
+          </a></li>
+        <li><a href="">
+            <div>
+              <p>30</p>
+            </div>
+            <img src="images/hint_locatie_groen.svg" alt="">
+            <p>Locatie</p>
+          </a></li>
+          <li  class="hint-done"><a href="#">
+            <div>
+              <p>15</p>
+            </div>
+            <img src="images/hint_camping_wit.svg" alt="">
+            <p>Camping</p>
+          </a></li>
+        <li><a href="">
+            <div>
+              <p>30</p>
+            </div>
+            <img src="images/hint_locatie_groen.svg" alt="">
+            <p>Locatie</p>
+          </a></li>
+          <li><a href="#">
+            <div>
+              <p>15</p>
+            </div>
+            <img src="images/hint_voorstelling_groen.svg" alt="">
+            <p>Voorstelling</p>
+          </a></li>
+        <li  class="hint-done"><a href="">
+            <div>
+              <p>30</p>
+            </div>
+            <img src="images/hint_locatie_wit.svg" alt="">
+            <p>Locatie</p>
+          </a></li>
+      </ul>
+    </div> 
+  </div>
 
 </template>
