@@ -47,6 +47,22 @@ Router.route('/joinfriends', {
         return Meteor.subscribe('userList');
     },
     data: function() {
-        return Meteor.users.find({});       
+        return Meteor.users.find({});
     }
  });
+
+
+var requireLogin = function() {
+	if (! Meteor.user()) {
+ 		if (Meteor.loggingIn()) {
+ 			this.render(this.loadingTemplate);
+ 		} else {
+ 			Router.go('home');
+ 		}
+ 	} else {
+ 		this.next();
+ 	}
+}
+
+Router.onBeforeAction(requireLogin, {except:'home'});
+// Router.onBeforeAction(requireLogin, {only: 'teamToevoegen'});only: 'targetPagina'}
