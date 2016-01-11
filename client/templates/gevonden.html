@@ -1,13 +1,13 @@
 <template name="gevonden">
-	
+
   	<input type="file" name=".." class="myFileInput">
-    <div class="imageView">
-    
-      <div>
-        <a href={{images}} target="_blank"><img src={{images}} alt="" class="thumbnail" /></a>
-      </div>
-    
-  </div>
-  
-  <input type="checkbox" value="TeamOpslaan" class="saveTeam">Team Opslaan
+  	<div class="imageView">
+	  	{{#with images}}
+	      <div>
+	        <a href="#" target="_blank"><img src={{this.url}} /></a>
+	      </div>
+		{{/with}}
+  	</div>
+
+  	<button type="button" class="button">Team geknuffeld</button>
 </template>

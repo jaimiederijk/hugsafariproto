@@ -10,7 +10,7 @@ Template.teamAansluiten.events({
     var teamID = event.target.attributes.value.value;
     var userID = Meteor.user()._id;
     var teamMembers = Teams.findOne(teamID).teammembers;
-    debugger
+    
     teamMembers.push(userID)
     teamMembers = {teammembers:teamMembers};
     Teams.update(teamID,{$set:teamMembers })

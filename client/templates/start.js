@@ -3,7 +3,10 @@ Template.home.helpers({
     if (!$.isEmptyObject(Meteor.user().profile)) {
       if (!$.isEmptyObject(Meteor.user().profile.teamid)) {
         Router.go('targetPagina')
-      };
+      }
+      else {
+      return true;
+    	}
     } else {
       return true;
     }

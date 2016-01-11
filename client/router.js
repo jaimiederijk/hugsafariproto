@@ -26,7 +26,17 @@ Router.route('/target', {name: 'targetPagina'});
 
 Router.route('/challenges', {name: 'challenges'});
 
-Router.route('/gevonden', {name: 'gevonden'});
+Router.route('/gevonden',{
+ waitOn: function () {
+ return Meteor.subscribe('images')
+ },
+ action: function () {
+ if (this.ready())
+ this.render('gevonden');
+ else
+ this.render('Loading');
+ }
+});
 
 Router.route('/admin', {name: 'admin'});
 

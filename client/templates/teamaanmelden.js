@@ -8,7 +8,7 @@ Template.teamAanmelden.helpers({
   teamName: function () {
     if (!$.isEmptyObject(Meteor.user().profile)) {
       return Meteor.user().profile.teamname
-    }; 
+    };
   }
 });
 
@@ -60,7 +60,8 @@ Template.teamAanmelden.events({
       createdAt: new Date(),
       teamName: teamName ,
       imagesURL: imagesURL,
-      targetteamID:""
+      targetteamID:"",
+      foundtargets:[]
 
     }, function (err, fileObj) {
       var userId = Meteor.userId();
