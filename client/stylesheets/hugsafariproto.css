@@ -54,7 +54,7 @@ li > a.knop, button {
 	
 
 }
-label {
+label, .button , .saveTeam span{
 	cursor: pointer; /* "hand" cursor */
 	cursor: hand;
 }

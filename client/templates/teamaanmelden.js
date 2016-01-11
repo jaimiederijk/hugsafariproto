@@ -24,15 +24,6 @@ Template.teamAanmelden.events({
         });
      });
    },
-  'change .teamName': function(event, template) {
-    console.log("changtext");
-      //debugger
-      var userId = Meteor.userId();
-      var team = {"profile.teamname":event.target.value};
-
-      Meteor.users.update(userId, {$set: team});
-
-   },
   'click .saveTeam': function(event, template) {
     console.log("save");
 

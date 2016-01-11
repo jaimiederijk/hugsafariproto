@@ -1,8 +1,7 @@
 Template.teamToevoegen.helpers({
   users: function () {
   	//debugger;
-  	return Meteor.users.find();
-    
+  	return Meteor.users.find({"profile.teamid":undefined});
 
     //Images.find(); // Where Images is an FS.Collection instance
   },
@@ -16,11 +15,11 @@ Template.teamToevoegen.events({
 		var userID = event.target.attributes.value.value
 		selectedUsers.push(userID)
 	},
-  	'change .saveTeam': function(event, template) {
+  'click .saveTeam': function(event, template) {
     console.log("save");
     var teamMembers = {"teammembers":selectedUsers}
     Teams.update(Meteor.user().profile.teamid,{$set:teamMembers })
-	Router.go('targetPagina') 
+	Router.go('targetPagina')
     // Meteor.users.update(userId, {$set: team});    
    }
 });
