@@ -1,9 +1,5 @@
 Template.gevonden.helpers({
-  images: function () {
-    //if (!$.isEmptyObject(Meteor.user().profile)) {
-      return Images.findOne(Meteor.user().profile.image) //Meteor.user().profile.image
-    //};
-  }
+
 });
 
 Template.gevonden.events({
@@ -50,5 +46,12 @@ Template.gevonden.events({
                       }
       };
       Teams.update({ _id: teamId },{ $push: foundData})
+
+      //clear images profile
+      var userId = Meteor.userId();
+      var imagesURL = {
+              "profile.image":  ""
+            };
+      Meteor.users.update(userId, {$set: imagesURL});
    }
 });

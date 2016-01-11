@@ -54,6 +54,21 @@ li > a.knop, button {
 	
 
 }
+label {
+	cursor: pointer; /* "hand" cursor */
+	cursor: hand;
+}
+label * {
+	pointer-events: none;
+}
+.myFileInput {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
 
 /* CSS declarations go here */
 
@@ -99,9 +114,7 @@ img {
 	background-repeat: no-repeat;
 	height:100vh;
 }
-.template-container-teamAanmelden label {
-	display:none;
-}
+
 .template-container-teamAanmelden button {
 	margin-top:1em;
 }
@@ -133,11 +146,11 @@ img {
 	text-align: center;
 }
 
-.imageView a {
+.imageView {
 	display:block;
 	text-align: center;
 }
-.imageView a img {
+.imageView img {
 	width:80vw;
 	border:10px solid white;
 	background:url(images/foto_achtergrond_tekst2.png);

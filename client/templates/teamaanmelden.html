@@ -1,19 +1,13 @@
 <template name="teamAanmelden">
 	<div class="template-container-teamAanmelden">
-		<input type="file" name=".." class="myFileInput">
-	<div class="imageView noImage"> 
-    <!-- de class noImage moet weg als er een foto is geupload. Dit is voor de vormgeving zonder foto nl. -->
-		{{#with images}}
-	      <div>
-	        <a href="#" target="_blank"><img src={{this.url}} alt="" /></a>
-	      </div>
-		{{/with}}
-	
+		<input type="file" name="file" id="file" class="myFileInput">
+	<div class="imageView">
+	{{> profileimage }}
+
 
 
   </div>
   <h1>{{teamName}}</h1>
-	<label>Team Naam:</label>
 	<input type="text" name=".." class="teamName" placeholder="Teamnaam...">
   <button type="button" value="TeamOpslaan" class="saveTeam">Start Team</button>
 	</div>

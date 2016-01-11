@@ -1,12 +1,8 @@
 <template name="gevonden">
 
-  	<input type="file" name=".." class="myFileInput">
+  	<input type="file" name="file" id="file" class="myFileInput">
   	<div class="imageView">
-	  	{{#with images}}
-	      <div>
-	        <a href="#" target="_blank"><img src={{this.url}} /></a>
-	      </div>
-		{{/with}}
+	  	{{> profileimage }}
   	</div>
 
   	<button type="button" class="button">Team geknuffeld</button>

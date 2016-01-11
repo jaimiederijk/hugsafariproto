@@ -1,0 +1,12 @@
+<template name="profileimage">
+	  	<label for= "file">
+		  	{{#with images}}
+		      <div>
+		        <img src={{this.url}} />
+		      </div>
+		    {{else}}
+		    	<div class="noImage">
+		    	</div>
+			{{/with}}
+		</label>
+</template>

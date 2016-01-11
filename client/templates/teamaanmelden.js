@@ -1,10 +1,4 @@
 Template.teamAanmelden.helpers({
-  images: function () {
-    if (!$.isEmptyObject(Meteor.user().profile)) {
-      return Images.findOne(Meteor.user().profile.image) //Meteor.user().profile.image
-    };
-    //Images.find(); // Where Images is an FS.Collection instance
-  },
   teamName: function () {
     if (!$.isEmptyObject(Meteor.user().profile)) {
       return Meteor.user().profile.teamname
@@ -66,6 +60,13 @@ Template.teamAanmelden.events({
     }, function (err, fileObj) {
       var userId = Meteor.userId();
       var teamID = {"profile.teamid":fileObj };
+
+      //clear images profile
+      var userId = Meteor.userId();
+      var imagesURL = {
+              "profile.image":  ""
+            };
+      Meteor.users.update(userId, {$set: imagesURL});
 
       Meteor.users.update(userId, {$set: teamID});
       Router.go('teamToevoegen')
