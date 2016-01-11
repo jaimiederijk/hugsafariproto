@@ -15,7 +15,7 @@ Template.gevonden.events({
               "profile.image":  fileObj._id//"/cfs/files/images/" +
             };
             Meteor.users.update(userId, {$set: imagesURL});
-
+            $("button").attr('disabled',false).removeClass("disabled");
             // var teamId = Meteor.user().profile.teamid
             // var number = Teams.findOne(teamId).foundtargets.length
             // var targetTeam = "targetid"//Teams.findOne(teamId).targetteamID  !!!!!!!!!uncomment
@@ -41,7 +41,7 @@ Template.gevonden.events({
       var foundData = {
       "foundtargets":{  createdBy: Meteor.userId(),
                         createdAt: new Date(),
-                        image:"/cfs/files/images/" + fileObj._id,
+                        image:"/cfs/files/images/" + Meteor.user().profile.image,
                         teamid:targetTeam
                       }
       };
@@ -53,5 +53,6 @@ Template.gevonden.events({
               "profile.image":  ""
             };
       Meteor.users.update(userId, {$set: imagesURL});
+      Router.go('targetPagina');
    }
 });

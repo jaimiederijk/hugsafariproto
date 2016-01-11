@@ -1,9 +1,5 @@
 Template.teamAanmelden.helpers({
-  teamName: function () {
-    if (!$.isEmptyObject(Meteor.user().profile)) {
-      return Meteor.user().profile.teamname
-    };
-  }
+
 });
 
 Template.teamAanmelden.events({
@@ -20,9 +16,19 @@ Template.teamAanmelden.events({
               "profile.image":  fileObj._id//"/cfs/files/images/" +
             };
             Meteor.users.update(userId, {$set: imagesURL});
+            $("button").attr('disabled',false).removeClass("disabled");
           }
         });
      });
+   },
+  'change .teamName': function(event, template) {
+    console.log("changtext");
+      //debugger
+      var userId = Meteor.userId();
+      var team = {"profile.teamname":event.target.value};
+
+      Meteor.users.update(userId, {$set: team});
+
    },
   'click .saveTeam': function(event, template) {
     console.log("save");

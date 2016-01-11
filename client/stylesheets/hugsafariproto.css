@@ -80,7 +80,10 @@ label * {
 img {
 	max-width: 600px;
 }
-
+.disabled {
+	color: #635757;
+    background-color: grey;
+}
 
 /*startpagina ---- Roos*/
 
