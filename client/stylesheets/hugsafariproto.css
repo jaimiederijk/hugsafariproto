@@ -93,7 +93,7 @@ img {
 .template-container-home {
 	box-sizing: border-box;
 	min-height:150vh;
-	background:url(images/start_bg.svg);
+	background:url(/images/start_bg.svg);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
@@ -115,7 +115,7 @@ img {
 
 /*Team aanmelden formulier --- Roos*/
 .template-container-teamAanmelden {
-	background:url(images/teamAanmelden_bg.svg);
+	background:url(/images/teamAanmelden_bg.svg);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	height:100vh;
@@ -143,7 +143,7 @@ img {
 	width:80vw;
 	height:80vw;
 	border:10px solid white;
-	background:url(images/foto_achtergrond_tekst2.png);
+	background:url(/images/foto_achtergrond_tekst2.png);
 	background-size: 100% 100%;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
@@ -159,7 +159,7 @@ img {
 .imageView img {
 	width:80vw;
 	border:10px solid white;
-	background:url(images/foto_achtergrond_tekst2.png);
+	background:url(/images/foto_achtergrond_tekst2.png);
 	background-size: 100% 100%;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
@@ -172,7 +172,7 @@ img {
 .template-container-teamToevoegen {
 	box-sizing: border-box;
 	min-height:100vh;
-	background:url(images/teamToevoegen_bg.svg);
+	background:url(/images/teamToevoegen_bg.svg);
 	background-size: auto 100%;
 	background-repeat: no-repeat;
 }
@@ -199,7 +199,7 @@ font-family: "futura";
 .template-container-targetPagina {
 	box-sizing: border-box;
 	min-height:100vh;
-	background:url(images/overzicht_bg.svg);
+	background:url(/images/overzicht_bg.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -576,7 +576,7 @@ nav .sub-nav li a {
 }
 
 .template-container-doelwit .target_info {
-	background-image: url("images/teamnaam_knop_bg2.png");
+	background-image: url("/images/teamnaam_knop_bg2.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	width:60vw;
