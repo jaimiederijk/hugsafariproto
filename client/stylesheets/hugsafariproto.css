@@ -293,3 +293,241 @@ font-family: "futura";
 	padding: .5em;
 	margin: 0 0;
 }
+
+.header {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index: 1;
+	padding:.5em 1em;
+	background-color: #79E425;
+	text-align: center;
+
+}
+.header > span.titel {
+	color:white;
+	text-align: center;
+	
+	
+}
+.header > span.punten {
+	color:white;
+	float:right;
+	
+	
+
+}
+
+.header .nav-knop {
+	float:left;
+	width:1.2em;
+
+}
+
+
+.inactive {
+	left:-2000px;
+}
+
+nav .extra {
+	background-color: #292425; 
+}
+nav .extra img {
+	width:1.5em;
+	padding:.5em;
+	float:right;
+}
+nav {
+	z-index: 2;
+	width:80vw;
+	position:fixed;
+	bottom:0;
+	top:0;
+	left:0;
+	box-sizing: border-box;
+	padding: 0 0;
+	 -webkit-transition: left .5s ease-in-out;
+    transition: left 2s;
+	margin: 0 0;
+	display:flex;
+	flex-direction: column;
+	align-items: stretch;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+}
+nav > * {
+	margin: 0 0;
+	padding: 0 0;
+	box-sizing: border-box;
+}
+
+nav .teaminfo {
+	background-color: #292425;
+	text-align: center;
+	position:relative;
+	flex:3 30%;
+}
+
+
+nav .teaminfo img {
+	display: block;
+	margin:0 auto;
+    width:150px;
+    height:auto;
+   	min-width: 100%;
+	min-height: 100%;
+}
+
+nav .teaminfo div {
+	border-radius: 50%;
+	overflow: hidden;
+	height:50px;
+    width: 50px;
+    margin:0 auto;
+    border:2px solid #79E425;
+   
+}
+nav .teaminfo ul {
+	list-style:none;
+	display:flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	position:absolute;
+	width:100%;
+	bottom:-20px;
+}
+
+nav .teaminfo ul li {
+	display:inline-block;
+	font-size: 12px;
+	vertical-align: middle;
+
+	flex:1;
+	padding:.5em;
+	background: #4c8d18; /* Old browsers */
+background: -webkit-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
+background: -o-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
+background: linear-gradient(to top right, #4c8d18 0%, #75dc24 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c8d18', endColorstr='#75dc24',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+nav .teaminfo ul li span {
+	display:inline-block;
+	vertical-align: middle;
+	float:right;
+	padding: 0 1em;
+	color:white;
+}
+
+nav .main-nav{
+	background-color: blue;
+	display:flex;
+	flex-direction: column;
+	flex:6 60%;
+}
+nav .sub-nav {
+	display:flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+
+
+nav .main-nav > * {
+	text-align: center;
+	flex:2 25%;
+
+	
+}
+nav .main-nav > li > a {
+	display:block;
+	text-decoration: none;
+	color:white;
+	position:relative;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 2em;
+	box-sizing: border-box;
+}
+nav .main-nav > li > a > * {
+	position:relative;
+
+	margin: 0 0;
+
+}
+
+nav .main-nav > li a img {
+	text-align: center;
+	margin-top:1em;
+	
+}
+nav .main-nav > li a p {
+	
+	padding: 0 0;
+	margin: 0 0;
+}
+
+
+
+nav > .main-nav > li:nth-of-type(1) {
+	background-color: #2E282A
+}
+nav > .main-nav > li:nth-of-type(2) {
+	background-color: #353031
+}
+nav > .main-nav > li:nth-of-type(3) {
+	background-color: #383838
+}
+nav > .main-nav > li:nth-of-type(4) {
+	background-color: #40383A
+}
+nav .sub-nav {
+
+}
+nav .sub-nav li {
+	flex: 3 30%;
+	text-align: center;
+	box-sizing: border-box;
+}
+nav .sub-nav li a {
+	display:block;
+	color:white;
+	text-decoration: none;
+	background: #4c8d18; /* Old browsers */
+background: -webkit-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
+background: -o-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
+background: linear-gradient(to top right, #4c8d18 0%, #75dc24 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c8d18', endColorstr='#75dc24',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+nav .sub-nav img {
+	height:1.5em;
+	padding:.5em .2em .2em .2em;
+	flex:1 100%;
+	margin:0 0;
+}
+nav .sub-nav li  p {
+	flex:1 100%;
+	margin-top:0;
+	font-size: .8em;
+
+}
+nav .sub-nav li a {
+	text-decoration: none;
+	color:white;
+	display:block;
+	display:flex;
+	flex-direction: column;
+}
+.donker {
+	background-color: rgba(0,0,0,.5) !important;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100vw;
+	height:100vh;
+	z-index: 1
+}
