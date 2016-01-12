@@ -4,7 +4,10 @@ body, html {
 	margin: 0 0;
 	font-family: "Futura";
 }
-
+body {
+	padding-top:2.5em;
+	
+}
 h1, h2, h3, h4 {
 	font-weight: 200;
 	color:white;
@@ -530,4 +533,35 @@ nav .sub-nav li a {
 	width:100vw;
 	height:100vh;
 	z-index: 1
+}
+
+
+
+/*doelwit slider*/
+.template-container-doelwit {
+	z-index: 3;
+	position:fixed;
+	width:100vw;
+	height:80vh;
+	background-color: blue;
+}
+.template-container-doelwit .target_foto {
+	width:100vw;
+	height:80vh;
+	overflow:hidden;
+
+
+}
+.template-container-doelwit .target_foto img {
+	min-width: 100vw;
+	min-height: 80vh;
+
+}
+
+.template-container-doelwit .target_info {
+	background-image: url("images/teamnaam_knop_bg.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:80 vw;
+	margin:0 auto;
 }
