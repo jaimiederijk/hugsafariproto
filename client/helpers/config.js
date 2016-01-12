@@ -9,8 +9,6 @@ Meteor.subscribe('challenges', function() {
 			createdAt: new Date(),
 			name:"Knuffel met een boom",
 			imagesURLS:["/images/hugatree.jpg"],
-<<<<<<< HEAD
-=======
 			punten:5
 		})
 		Challenges.insert({
@@ -95,7 +93,6 @@ Meteor.subscribe('challenges', function() {
 			createdAt: new Date(),
 			name:"Knuffel met een boom",
 			imagesURLS:["/images/hugatree.jpg"],
->>>>>>> origin/master
 			punten:5
 		})
 	};
