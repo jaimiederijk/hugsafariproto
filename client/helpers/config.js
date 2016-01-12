@@ -8,7 +8,7 @@ Meteor.subscribe('challenges', function() {
 		Challenges.insert({
 			createdAt: new Date(),
 			name:"Knuffel met een boom",
-			imagesURLS:["images/hugatree.jpg"],
+			imagesURLS:["/images/hugatree.jpg"],
 			punten:5
 		})
 	};

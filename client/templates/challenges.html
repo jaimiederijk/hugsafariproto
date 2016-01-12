@@ -2,10 +2,8 @@
 
   	{{#each challenges}}
     	<div class="challenge">
-    		<<a href="" title=""><p>{{name}}</p><p>{{punten}}</p></a>
-    		
+    		<a href="{{pathFor 'challenge'}}" title=""><p>{{name}}</p><p>{{punten}}</p></a>
 
-    		
     	</div>
   	{{/each}}
   <input type="checkbox" value="TeamOpslaan" class="saveTeam">Team Opslaan

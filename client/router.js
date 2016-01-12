@@ -24,10 +24,11 @@ Router.route('/join', {name: 'teamAansluiten'});
 
 Router.route('/target', {name: 'targetPagina'});
 
-Router.route('/challenges', {name: 'challenges',
-	waitOn: function () {
-	 return Meteor.subscribe('challenges')
-	}});
+Router.route('/challenges', {name: 'challenges'});
+
+Router.route('/challenges/:_id/challenge', {name: 'challenge',
+	data: function() { return Challenges.findOne(this.params._id); }
+});
 
 Router.route('/gevonden',{
  waitOn: function () {
