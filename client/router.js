@@ -3,7 +3,7 @@ Router.configure({
   	loadingTemplate: 'loading',
   	waitOn: function () {
 	 return Meteor.subscribe('teams')
-	},
+	}
 });
 
 Router.route('/teamAanmelden',{
@@ -24,7 +24,10 @@ Router.route('/join', {name: 'teamAansluiten'});
 
 Router.route('/target', {name: 'targetPagina'});
 
-Router.route('/challenges', {name: 'challenges'});
+Router.route('/challenges', {name: 'challenges',
+	waitOn: function () {
+	 return Meteor.subscribe('challenges')
+	}});
 
 Router.route('/gevonden',{
  waitOn: function () {

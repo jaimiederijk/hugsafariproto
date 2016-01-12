@@ -4,3 +4,5 @@ Meteor.publish("challenges", function(){ return Challenges.find(); });
 Meteor.publish('userList', function (){
   return Meteor.users.find({});
 });
+
+
