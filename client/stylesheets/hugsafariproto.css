@@ -303,7 +303,7 @@ font-family: "futura";
 	left:0;
 	width:100%;
 	z-index: 1;
-	padding:.5em 1em;
+	padding:2.5em 1em .5em 1em;
 	background-color: #79E425;
 	text-align: center;
 
@@ -351,7 +351,7 @@ nav {
 	box-sizing: border-box;
 	padding: 0 0;
 	 -webkit-transition: left .5s ease-in-out;
-    transition: left 2s;
+    transition: left 2s ease-in-out;
 	margin: 0 0;
 	display:flex;
 	flex-direction: column;
@@ -525,6 +525,12 @@ nav .sub-nav li a {
 	display:flex;
 	flex-direction: column;
 }
+
+.overlay {
+	background-color: rgba(0,0,0)
+	 -webkit-transition: background-color .5s ease-in-out;
+    transition: background-color .5s ease-in-out;
+}
 .donker {
 	background-color: rgba(0,0,0,.5) !important;
 	position:fixed;
@@ -532,18 +538,29 @@ nav .sub-nav li a {
 	top:0;
 	width:100vw;
 	height:100vh;
+
 	z-index: 1
 }
+.template-container-doelwit.omlaag {
+	top:0px;
+}
 
-
+.template-container-doelwit .target_info.teamnaam_omlaag {
+	top:60vh;
+}
 
 /*doelwit slider*/
 .template-container-doelwit {
-	z-index: 3;
+	z-index: 90;
 	position:fixed;
 	width:100vw;
 	height:80vh;
-	background-color: blue;
+	top:-2000px;
+	 -webkit-transition: top .5s ease-in-out;
+    transition: top 2s ease-in-out;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 }
 .template-container-doelwit .target_foto {
 	width:100vw;
@@ -559,9 +576,47 @@ nav .sub-nav li a {
 }
 
 .template-container-doelwit .target_info {
-	background-image: url("images/teamnaam_knop_bg.svg");
+	background-image: url("images/teamnaam_knop_bg2.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	width:80 vw;
-	margin:0 auto;
+	width:60vw;
+	padding:.5em 0;
+	position:fixed;
+	text-align: center;
+	left:20vw;
+	right:20vw;
+	top:-2000px;
+	 -webkit-transition: top .5s ease-in-out;
+    transition: top 2s ease-in-out;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+}
+.template-container-doelwit .target_info p {
+	color:white;
+	padding: 0 0;
+	margin: 0 0;
+}
+.template-container-doelwit .target_info h3 {
+	padding: 0 0;
+	margin: 0 0;
+}
+.target_icon img {
+	position:fixed;
+	z-index: 99 !important;
+	width:3em;
+	left:45%;
+	right:50%;
+	top:90vh;
+	padding:.5em;
+}
+
+.normal {
+	position:fixed;
+	 -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+     -webkit-transition: transform .5s ease-in-out,  top .5s ease-in-out;
+    transition: transform .5s ease-in-out, top .5s ease-in-out;
+    top:0vh !important;
 }
