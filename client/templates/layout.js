@@ -5,6 +5,11 @@ Template.layout.helpers({
   },
   paginatitel:function(){
     return this.name
+  },
+  teamfoto:function(){
+    var teamId = Meteor.user().profile.teamid
+    var teamImg = Teams.findOne(teamId).imagesURL
+    return Images.findOne(teamImg)
   }
 });
 

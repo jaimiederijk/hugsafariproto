@@ -12,14 +12,19 @@
 			<div class="extra"><img class="nav-knop" src="/images/icon_hamburger.png" alt=""></div>
 			<div class='teaminfo'>
 				<!-- test image vervangen door user image -->
-				<div><img src="/images/test_teamfoto.jpg" alt=""></div>
+				<div>
+					{{#with teamfoto}}
+						<img src={{this.url}} alt="">
+					{{/with}}
+
+				</div>
 				<ul>
 					<li>Gevonden Targets: <span>3</span></li>
 					<li>Poule Positie <span>51</span></li>
 				</ul>
 			</div>
 	      	<ul class="main-nav">
-					<li><a href="#"><img src="/images/nav_icon_home_groen.svg" alt=""><p>Hugsafari</p></a></li>
+					<li><a href="{{pathFor 'targetPagina'}}"><img src="/images/nav_icon_home_groen.svg" alt=""><p>Hugsafari</p></a></li>
 					<li><a href="{{pathFor 'leaderboard'}}"><img src="/images/nav_icon_leaderboard_groen.svg" alt=""><p>Leaderboard</p></a></li>
 					<li><a href="{{pathFor 'challenges'}}"><img src="/images/nav_icon_challenges_groen.svg" alt=""><p>Challenges</p></a></li>
 					<li><a href="#"><img src="/images/nav_icon_fotostream_groen.svg" alt=""><p>Fotostream</p></a></li>

@@ -1,7 +1,12 @@
 <template name="doelwit">
 	<div class="template-container-doelwit">
+		 <!-- <div><h2>Doelwit van de {{teamname}}</h2>
+      <a href={{images}} target="_blank"><img src={{images}} alt="" class="thumbnail" /></a>
+    </div> -->
 		<div class="target_foto">
-			<img src="/images/test_teamfoto.jpg" alt="">
+			{{#with images}}
+				<img src="{{this.url}}" alt="">
+			{{/with}}
 		</div>
 		<div class="target_info">
 			<h3>{{teamname}},</h3>
