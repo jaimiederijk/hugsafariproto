@@ -1,7 +1,15 @@
 <template name="challenge">
-	{{#with challenge}}
-		<h2>{{name}}</h2>
-		<img src="{{imagesURLS}}" alt="">
+  <div class="template-container-challenge">
+	{{#with challenge}}	
+		<h2>{{name}}</h2>		
 		<p>{{punten}}</p>
-	{{/with}}
+		<img src="{{images}}" alt="">
+	{{/with}}	
+	<input type="file" name="file" id="file" class="myFileInput">
+  	<div class="imageView">
+	  	{{> profileimage }}
+	  	<button type="button" class="button disabled" disabled="true">Complete Challenge</button>
+  	</div>
+  	<button type="button" class="submitchallenge">submit challenge</button>
+  </div>
 </template>

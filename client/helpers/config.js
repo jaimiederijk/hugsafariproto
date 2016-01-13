@@ -2,6 +2,8 @@ Accounts.ui.config({
  passwordSignupFields: 'USERNAME_ONLY'
 });
 
+Meteor.subscribe('images')
+
 Meteor.subscribe('challenges', function() {
 	if (Challenges.find().count()<=0) {
 		//repeat this part for more challenges

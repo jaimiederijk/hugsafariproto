@@ -548,6 +548,16 @@ nav .sub-nav li a {
 .template-container-doelwit .target_info.teamnaam_omlaag {
 	top:60vh;
 }
+/*challenge pagina  Jaimie*/
+.template-container-challenge .imageView {
+	position: absolute;
+	-webkit-transition: .5s ease-in-out;
+    transition: 2s ease-in-out;
+    top: -1600px;
+}
+.template-container-challenge .showUpload {
+    top: 71px;
+}
 
 /*doelwit slider*/
 .template-container-doelwit {
