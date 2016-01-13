@@ -9,7 +9,7 @@
 		<div class="header">
 			<img class="nav-knop" src="/images/icon_hamburger.png" alt="">
 			<span class="titel">paginatitel hier</span>
-			<span class="punten">10 <img src="/images/icon_punten_orange.svg" alt=""></span>
+			<span class="punten">{{ punten }} <img src="/images/icon_punten_orange.svg" alt=""></span>
 		</div>
 		<nav class="inactive">
 			<div class="extra"><img class="nav-knop" src="/images/icon_hamburger.png" alt=""></div>
@@ -23,12 +23,12 @@
 			</div>
 	      <ul class="main-nav">
 					<li><a href="#"><img src="/images/nav_icon_home_groen.svg" alt=""><p>Hugsafari</p></a></li>
-					<li><a href="#"><img src="/images/nav_icon_leaderboard_groen.svg" alt=""><p>Leaderboard</p></a></li>
-					<li><a href="#"><img src="/images/nav_icon_challenges_groen.svg" alt=""><p>Challenges</p></a></li>
+					<li><a href="{{pathFor 'leaderboard'}}"><img src="/images/nav_icon_leaderboard_groen.svg" alt=""><p>Leaderboard</p></a></li>
+					<li><a href="{{pathFor 'challenges'}}"><img src="/images/nav_icon_challenges_groen.svg" alt=""><p>Challenges</p></a></li>
 					<li><a href="#"><img src="/images/nav_icon_fotostream_groen.svg" alt=""><p>Fotostream</p></a></li>
 				</ul>
 				<ul class='sub-nav'>
-					<li><a href="#"><img src="/images/nav_icon_settings_wit.svg" alt=""><p>settings</p></a></li>
+					<li><a href="#"><img src="/images/nav_icon_settings_wit.svg" alt=""><p>{{> loginButtons}}</p></a></li>
 					<li><a href="#"><img src="/images/nav_icon_team_wit.svg" alt=""><p>Team</p></a></li>
 					<li><a href="#"><img src="/images/nav_icon_help_wit.svg" alt=""><p>help</p></a></li>
 				</ul> 
@@ -41,10 +41,9 @@
 	<div class="container">
 
 		<a href="{{pathFor 'home'}}">Home</a>
-		{{#if currentUser}}
+		<!-- {{#if currentUser}}
 			{{> loginButtons}}
-		{{/if}}
-		<p>dit kan later weg</p>
+		{{/if}} -->
 		<div id="a" class="bla">
 			{{> yield}}
 		</div>

@@ -3,6 +3,8 @@ Accounts.ui.config({
 });
 
 Meteor.subscribe('images')
+Meteor.subscribe('teams')
+Meteor.subscribe('userList');
 
 Meteor.subscribe('challenges', function() {
 	if (Challenges.find().count()<=0) {

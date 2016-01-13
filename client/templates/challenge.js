@@ -43,6 +43,11 @@ Template.challenge.events({
       };
       Teams.update({ _id: teamId },{ $push: challengeData})
 
+      var currentPoints={
+      	"points" : Teams.findOne(teamId).points + points
+      }
+
+      Teams.update({ _id: teamId },{ $set: currentPoints})
 
       var img = {
       "imagesURLS":"/cfs/files/images/" + Meteor.user().profile.image                     

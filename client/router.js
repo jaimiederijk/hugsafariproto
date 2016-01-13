@@ -22,6 +22,8 @@ Router.route('/', {name: 'home'});
 //Router.route('/team', {name: 'teamAanmelden'});
 Router.route('/join', {name: 'teamAansluiten'});
 
+Router.route('/leaderboard', {name: 'leaderboard'});
+
 Router.route('/target', {name: 'targetPagina'});
 
 Router.route('/challenges', {name: 'challenges'});

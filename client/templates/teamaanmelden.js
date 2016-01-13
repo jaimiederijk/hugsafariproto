@@ -52,7 +52,10 @@ Template.teamAanmelden.events({
       teamName: teamName ,
       imagesURL: imagesURL,
       targetteamID:"",
-      foundtargets:[]
+      foundtargets:[],
+      challenges:[],
+      teammembers:[Meteor.userId()],
+      points:0 
 
     }, function (err, fileObj) {
       var userId = Meteor.userId();
