@@ -2,11 +2,12 @@
 	<div class="template-container-home">
 		
 		<h1>Hugsafari<span>.</span></h1>
-		
-		<div class="photostream">
+		<a class="go_to_aanmeld" href="#teamsinlog"><img src="/images/target_icon_green.svg" alt=""></a>
+		<!-- <div class="photostream">
 			<img src="/images/example.png" alt="">
-		</div>
+		</div> -->
 		<div class="container">
+		<a name="teamsinlog">
 			{{#unless currentUser}}
 				<div id="login" class="login">
 					{{> loginButtons}}
@@ -18,6 +19,7 @@
 					{{> teamsInlog }}
 				{{/if}}
 			{{/if}}
+			</a>
 		</div>
 	</div>
 </template>

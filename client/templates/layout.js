@@ -9,7 +9,7 @@ Template.layout.events({
 	'click .target_icon img': function() {
 		console.log("go")
     $('.overlay').toggleClass("donker");
-    $('.target_icon img').toggleClass("normal");
+    $('.target_icon img').toggleClass("target_icon_down");
     $('.template-container-doelwit').toggleClass("omlaag");
     $('.template-container-doelwit .target_info').toggleClass("teamnaam_omlaag")
 }

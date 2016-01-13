@@ -1,3 +1,23 @@
+/*
+
+oranje: #ED7425
+groen: #79E425;
+	TODO:
+	- Go to link in de startpagina fixed
+	- jquery swipe voor navigatie en target page
+	- challenges
+	- leaderbord
+	- targetpage
+	- team aanmeld
+	- team aanmeld 2
+	- aansluiten bij team
+	- navigatie
+	- header op elke pagina oke weergeven
+	- coach marks
+
+*/
+
+
 /*standaard --- Roos*/
 body, html {
 	padding: 0 0;
@@ -5,7 +25,7 @@ body, html {
 	font-family: "Futura";
 }
 body {
-	padding-top:2.5em;
+	padding-top:4.5em;
 	
 }
 h1, h2, h3, h4 {
@@ -89,30 +109,75 @@ img {
 }
 
 /*startpagina ---- Roos*/
+/* / voor de images! 
+
+*/
 
 .template-container-home {
+	margin: 0 0;
+	padding: 0 0;
+	background-image: url(/images/start_bg.svg);
+	background-size: cover;
+	 -moz-box-sizing: border-box;
 	box-sizing: border-box;
-	min-height:150vh;
-	background:url(/images/start_bg.svg);
-	background-size: 100% auto;
-	background-repeat: no-repeat;
+	width:100%;
+	min-height:100vh;
+	
+	position:relative;
 }
 
 .template-container-teamsInlog {
-	margin-top:40vh;
-	margin-bottom:20vh;
+	position:absolute;
+	bottom:-200px;
+	padding-bottom: 5em;
+	width:100%;
 }
 
 .template-container-home h1 {
-	margin: 0 0;
+	
 	padding: 1em 0;
-	text-align: center;
+	text-align: left;
+	width:80%;
+	margin:0 auto;
 }
 .template-container-home h1 span {
 	color:#ED7425;
 }
 
+.template-container-teamsInlog  ul {
+	list-style: none;
+	text-align: center;
+}
 
+.template-container-teamsInlog  ul li {
+
+}
+
+.template-container-teamsInlog  ul > li > a {
+	text-decoration: none;
+	padding:.5em;
+	display: block;
+	width:80vw;
+	margin:.5em auto;
+	color:white;
+	text-align: center;
+	background-color: #79E425;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+}
+
+.go_to_aanmeld {
+	display:block;
+	position:absolute;
+	bottom:20vh;
+	left:45vw;
+	right:45vw;
+}
+
+.go_to_aanmeld img {
+	width:2em;
+}
 /*Team aanmelden formulier --- Roos*/
 .template-container-teamAanmelden {
 	background:url(/images/teamAanmelden_bg.svg);
@@ -199,6 +264,7 @@ font-family: "futura";
 .template-container-targetPagina {
 	box-sizing: border-box;
 	min-height:100vh;
+	padding-top:2em;
 	background:url(/images/overzicht_bg.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -211,6 +277,11 @@ font-family: "futura";
 	
 
 }
+
+.template-container-targetPagina > ul li:first-of-type a {
+	background-color: #ED7425;
+}
+
 .hints-list {
 	list-style: none;
 	display:flex;
@@ -302,20 +373,82 @@ font-family: "futura";
 	top:0;
 	left:0;
 	width:100%;
-	z-index: 1;
-	padding:2.5em 1em .5em 1em;
+	
+	padding:.5em 1em .5em 1em;
 	background-color: #79E425;
 	text-align: center;
 
 }
-.header > span.titel {
+
+.header .nav-knop {
+	float:left;
+	height:1.5em;
+}
+.header .punten {
+	padding: 0 0;
+	margin: 0 0;
+	float:right;
+	margin-right: 2em;
+	height:2em;
+	display:inline-block;
+}
+.header .punten img {
+	height:1.5em;
+	vertical-align: middle;
+	display:inline-block;
+}
+.header .punten p {
+	display:inline-block;
 	color:white;
+	padding: 0 0;
+vertical-align: middle;
+	margin:0 0;
+}
+.target_icon {
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
+	z-index: 2;
 	text-align: center;
+	padding:.5em;
+	
+}
+.target_icon img {
+	
+	position:relative;
+	bottom:0;    
+    -webkit-transition:bottom .5s;
+    transition:bottom .5s;
+	height:1.5em;
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+	
+}
+
+img.target_icon_down {
+-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg) ;
+    
+    bottom:-85vh ;
+}
+
+/*.header > .target_icon {
+	border:1px solid white;
+	text-align: center;
+	display:block;
 	
 	
 }
+.header > .target_icon img {
+	border:1px solid red;
+	width:2em;
+}
 .header > span.punten {
 	color:white;
+
 	float:right;
 	
 	
@@ -326,7 +459,7 @@ font-family: "futura";
 	float:left;
 	width:1.2em;
 
-}
+}*/
 
 
 .inactive {
@@ -601,22 +734,5 @@ nav .sub-nav li a {
 	padding: 0 0;
 	margin: 0 0;
 }
-.target_icon img {
-	position:fixed;
-	z-index: 99 !important;
-	width:3em;
-	left:45%;
-	right:50%;
-	top:90vh;
-	padding:.5em;
-}
 
-.normal {
-	position:fixed;
-	 -ms-transform: rotate(180deg); /* IE 9 */
-    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
-     -webkit-transition: transform .5s ease-in-out,  top .5s ease-in-out;
-    transition: transform .5s ease-in-out, top .5s ease-in-out;
-    top:0vh !important;
-}
+
