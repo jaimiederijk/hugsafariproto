@@ -15,18 +15,29 @@ Router.route('/teamAanmelden',{
  this.render('teamAanmelden');
  else
  this.render('Loading');
- }
+ },
+  data: function() { return {"name":"Team aanmelden"} }
 });
 
-Router.route('/', {name: 'home'});
+Router.route('/', {name: 'home',
+  data: function() { return {"name":"Start"} }
+});
 //Router.route('/team', {name: 'teamAanmelden'});
-Router.route('/join', {name: 'teamAansluiten'});
+Router.route('/join', {name: 'teamAansluiten',
+  data: function() { return {"name":"Aansluiten bij team"} }
+});
 
-Router.route('/leaderboard', {name: 'leaderboard'});
+Router.route('/leaderboard', {name: 'leaderboard',
+  data: function() { return {"name":"Leaderboard"} }
+});
 
-Router.route('/target', {name: 'targetPagina'});
+Router.route('/target', {name: 'targetPagina',
+  data: function() { return {"name":"Hugsafari"} }
+});
 
-Router.route('/challenges', {name: 'challenges'});
+Router.route('/challenges', {name: 'challenges',
+  data: function() { return {"name":"Challenges"} }
+});
 
 Router.route('/challenges/:_id/challenge', {name: 'challenge',
 	data: function() { return Challenges.findOne(this.params._id); }
@@ -41,10 +52,14 @@ Router.route('/gevonden',{
  this.render('gevonden');
  else
  this.render('Loading');
- }
+ },
+  data: function() { return {"name":"gevonden"} }
+
 });
 
-Router.route('/admin', {name: 'admin'});
+Router.route('/admin', {name: 'admin',
+  data: function() { return {"name":"admin"} }
+});
 
 
 Router.route('/joinfriends', {
@@ -52,9 +67,7 @@ Router.route('/joinfriends', {
     waitOn: function() {
         return Meteor.subscribe('userList');
     },
-    data: function() {
-        return Meteor.users.find({});
-    }
+    data: function() { return {"name":"Leden toevoegen"} }
  });
 
 

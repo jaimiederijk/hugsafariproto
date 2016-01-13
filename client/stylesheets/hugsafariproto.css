@@ -406,12 +406,13 @@ vertical-align: middle;
 }
 .target_icon {
 	position:fixed;
-	width:100%;
+	/*width:100%;*/
 	top:0;
-	left:0;
+	left:50%;
 	z-index: 2;
 	text-align: center;
 	padding:.5em;
+	margin-left: -30.5px;
 	
 }
 .target_icon img {

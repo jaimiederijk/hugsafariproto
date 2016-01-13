@@ -2,6 +2,9 @@ Template.layout.helpers({
   punten:function(){
     var teamId = Meteor.user().profile.teamid
     return Teams.findOne(teamId).points
+  },
+  paginatitel:function(){
+    return this.name
   }
 });
 
