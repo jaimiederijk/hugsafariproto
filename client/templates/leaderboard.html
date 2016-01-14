@@ -1,5 +1,16 @@
 <template name="leaderboard">
-	<div>
-		<p>totaal: {{points}}</p>
+	<button type="button" id="challengesleaderbord" class="disabled" disabled="true">challenges</button>
+	<button type="button" id="gevondenleaderbord">gevonden</button>
+	<div class="challengelist">
+		{{#each teams}}
+			<p>team:{{teamName}} totaal: {{points}}</p>
+		{{/each}}
+	</div>
+	<div class="gevondenlist displayNone">
+		{{#each teams}}
+			<p>team:{{teamName}} aantal targets:{{findCount}}</p>
+
+		{{/each}}
+		<p></p>
 	</div>
 </template>

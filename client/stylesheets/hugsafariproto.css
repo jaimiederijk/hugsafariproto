@@ -84,6 +84,12 @@ label, .button , .saveTeam span{
 label * {
 	pointer-events: none;
 }
+.displayNone {
+	display: none;
+}
+.selected {
+	background-color: #737373;
+}
 .myFileInput {
 	width: 0.1px;
 	height: 0.1px;
