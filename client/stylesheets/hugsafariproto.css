@@ -470,7 +470,7 @@ img.target_icon_down {
 .inactive {
 	left:-85vw;
 }
-
+/*
 nav .extra {
 	background-color: #292425; 
 }
@@ -561,10 +561,10 @@ nav .teaminfo .nav_stats li {
 vertical-align: middle;
 	
 	background: #4c8d18; /* Old browsers */
-background: -webkit-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
+/*background: -webkit-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
 background: -o-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
 background: linear-gradient(to top right, #4c8d18 0%, #75dc24 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c8d18', endColorstr='#75dc24',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c8d18', endColorstr='#75dc24',GradientType=1 ); /* IE6-9 fallback on horizontal gradient *//*
 }
 
 nav .teaminfo .nav_stats > li img {
@@ -659,10 +659,10 @@ nav .sub-nav li a {
 	color:white;
 	text-decoration: none;
 	background: #4c8d18; /* Old browsers */
-background: -webkit-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
+/*background: -webkit-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
 background: -o-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
-background: linear-gradient(to top right, #4c8d18 0%, #75dc24 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c8d18', endColorstr='#75dc24',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: linear-gradient(to top right, #4c8d18 0%, #75dc24 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *//*
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c8d18', endColorstr='#75dc24',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ /*
 }
 
 nav .sub-nav img {
@@ -684,6 +684,214 @@ nav .sub-nav li a {
 	display:flex;
 	flex-direction: column;
 }
+*/
+
+nav {
+	background-color: #292425; 
+	position:fixed;
+	top:0;
+	left:0;
+	width:80vw;
+	z-index: 3;
+	-webkit-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out;
+}
+nav > * {
+	padding: 0 0;
+	margin: 0 0;
+	box-sizing: border-box !important;
+	width:100%;
+}
+
+nav .extra {
+	height:8vh;
+	padding:.5em;
+}
+
+nav .teaminfo {
+	height:17vh;
+	display:block;
+	position:relative;
+}
+nav .main-nav {
+	height:65vh;
+}
+nav .sub-nav {
+	height:10vh;
+}
+
+nav img {
+
+}
+nav .extra {
+
+}
+nav .extra img {
+	height:3vh;
+	width:3vh;
+	margin-top:.2em;
+	float:right;
+}
+nav .teaminfo div {
+	height:10vh;
+	width:10vh;
+	left: calc(50% - 5vh);
+	right:10% !important;
+	border-radius: 50%;
+	display:block;
+	text-align: center;
+	overflow: hidden;
+	position:absolute;
+    border:2px solid #79E425;
+   
+}
+nav .teaminfo div img {
+	display: block;
+	margin:0 auto;
+    width:50px;
+    height:auto;
+   	min-width: 100%;
+	min-height: 100%;
+}
+
+
+nav .teaminfo .nav_stats { 
+	list-style: none;
+	display:flex;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	margin: 0 0;
+	padding: 0 0;
+
+}
+
+nav .teaminfo .nav_stats li {
+	height:3vh;
+	flex:5 50%;
+	padding: .2em 1em;
+	text-align: center;
+	background: #4c8d18; /* Old browsers */
+background: -webkit-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
+background: -o-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
+background: linear-gradient(to top right, #4c8d18 0%, #75dc24 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c8d18', endColorstr='#75dc24',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+nav .teaminfo .nav_stats > li img {
+	height:3vh;
+	display:inline-block;
+	padding: 0 0;
+	margin: 0 0;
+}
+nav .teaminfo .nav_stats li span {
+	float:right;
+	color:white;
+	font-size: .8em;
+	line-height: 3vh;
+	vertical-align: middle;
+	display:inline-block;
+	
+}
+
+nav .main-nav{
+	background-color: blue;
+	display:flex;
+	flex-direction: column;
+}
+
+
+
+
+nav .main-nav > * {
+	text-align: center;
+	flex:2 25%;
+}
+nav .main-nav > li > a {
+	display:block;
+	text-decoration: none;
+	color:white;
+	position:relative;
+	text-align: center;
+	font-size: 1em;
+	box-sizing: border-box;
+}
+nav .main-nav > li > a > * {
+	position:relative;
+
+	margin: 0 0;
+
+}
+
+nav .main-nav > li a img {
+	text-align: center;
+	margin-top:1em;
+	
+}
+nav .main-nav > li a p {
+	
+	padding: 0 0;
+	margin: 0 0;
+}
+
+
+
+nav > .main-nav > li:nth-of-type(1) {
+	background-color: #2E282A
+}
+nav > .main-nav > li:nth-of-type(2) {
+	background-color: #353031
+}
+nav > .main-nav > li:nth-of-type(3) {
+	background-color: #383838
+}
+nav > .main-nav > li:nth-of-type(4) {
+	background-color: #40383A
+}
+
+nav .sub-nav {
+	display:flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+nav .sub-nav li {
+	flex: 3 33%;
+	text-align: center;
+	box-sizing: border-box;
+}
+nav .sub-nav li a {
+	display:block;
+	color:white;
+	text-decoration: none;
+	background: #4c8d18; /* Old browsers */
+background: -webkit-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
+background: -o-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
+background: linear-gradient(to top right, #4c8d18 0%, #75dc24 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c8d18', endColorstr='#75dc24',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
+}
+
+nav .sub-nav img {
+	height:1.2em;
+	padding:.5em .2em .2em .2em;
+	flex:1 100%;
+	margin:0 0;
+}
+nav .sub-nav li  p {
+	flex:1 100%;
+	margin-top:0;
+	font-size: .8em;
+
+}
+nav .sub-nav li a {
+	text-decoration: none;
+	color:white;
+	display:block;
+	display:flex;
+	flex-direction: column;
+}
+
 
 .overlay {
 	background-color: rgba(0,0,0)
