@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="375px" height="667px" viewBox="0 0 375 667" enable-background="new 0 0 375 667" xml:space="preserve">
+<g id="challenges_bg">
+	<polygon fill="#79E425" points="0.49,0.498 187.745,0 375.122,0.498 375.49,668.498 196.156,668.498 0.49,667 	"/>
+	<g>
+		<defs>
+			<polygon id="SVGID_1_" points="375.49,668.498 0.49,667 0.49,0.498 375,0.498 			"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g display="none" clip-path="url(#SVGID_2_)">
+			<ellipse display="inline" fill="#DCDCDC" cx="300.912" cy="166.03" rx="147.432" ry="147.211"/>
+			<ellipse display="inline" fill="#E7E7E7" cx="300.912" cy="166.03" rx="109.828" ry="109.664"/>
+			<ellipse display="inline" fill="#EEEEEE" cx="300.912" cy="166.03" rx="72.773" ry="72.664"/>
+			<ellipse display="inline" fill="#F6F6F6" cx="300.912" cy="166.03" rx="38.547" ry="38.489"/>
+		</g>
+		<g clip-path="url(#SVGID_2_)">
+			<defs>
+				<polygon id="SVGID_3_" points="0.49,0.498 187.745,0 375.122,0.498 375.551,666.254 196.156,667.498 0.49,667 				"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  overflow="visible"/>
+			</clipPath>
+			<g id="overzicht_alt_bg_7_" clip-path="url(#SVGID_4_)">
+				<g>
+					<ellipse fill="#68C322" cx="363.69" cy="400.502" rx="134.08" ry="133.879"/>
+					<ellipse fill="#6BC823" cx="363.69" cy="400.502" rx="99.882" ry="99.732"/>
+					<ellipse fill="#70D224" cx="363.69" cy="400.502" rx="66.182" ry="66.083"/>
+					<ellipse fill="#75DC24" cx="363.69" cy="400.502" rx="35.056" ry="35.003"/>
+				</g>
+			</g>
+			<g id="overzicht_alt_bg_5_" clip-path="url(#SVGID_4_)">
+				<g>
+					<ellipse fill="#68C322" cx="52.141" cy="143.312" rx="71.543" ry="71.436"/>
+					<ellipse fill="#6BC823" cx="52.141" cy="143.312" rx="53.295" ry="53.215"/>
+					<ellipse fill="#70D224" cx="52.141" cy="143.312" rx="35.314" ry="35.261"/>
+					<ellipse fill="#75DC24" cx="52.141" cy="143.312" rx="19.145" ry="19.116"/>
+				</g>
+			</g>
+			<g clip-path="url(#SVGID_4_)">
+				<path fill="#75DC24" d="M0.49,481.818l58.023-71.305l14.804,53.919l49.842,36.606l23.604-33.768l28.727,24.22v51.7
+					c0,0,25.773,22.312,29.773,21.641c4-0.672,70.199-11.656,70.199-11.656l-35.229,49.887l2.901,29.886l41.051,33.058L0,667
+					L0.49,481.818z"/>
+				<polygon fill="#70D224" points="37.263,475.79 62.149,549.18 130.343,523.718 134.689,533.204 153.113,528.711 159.074,567.652 
+					214.055,583.629 240.046,578.636 225.041,612.01 230.038,651.527 256.037,656.519 266.159,666.005 0,667 0.49,515.98 				"/>
+				<polygon fill="#6BC823" points="25.263,520.195 0.49,515.98 0,667 247.911,666.005 206.399,658.017 201.218,625.316 
+					215.127,600.728 152.581,588.184 143.559,549.711 108.047,584.143 104.542,563.666 46.652,607.597 				"/>
+				<polygon fill="#68C322" points="130.984,650.029 136.036,612.26 81.536,622.229 31.536,630.832 13.536,578.168 3.763,606.111 
+					0.49,559.918 0,667 154.758,666.005 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

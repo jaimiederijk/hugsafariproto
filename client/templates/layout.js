@@ -21,6 +21,13 @@ Template.layout.events({
     $('.overlay').toggleClass("donker");
     
 },
+// 'click .main-nav li a': function() {
+//     console.log("go");
+//     $('nav').toggleClass("inactive");
+//     $('.nav-knop').toggleClass("omhoog");
+//     $('.overlay').toggleClass("donker");
+    
+// },
 	'click .target_icon img': function() {
 		console.log("go")
     $('.overlay').toggleClass("donker");

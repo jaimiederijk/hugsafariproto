@@ -396,7 +396,7 @@ font-family: "futura";
 	display:inline-block;
 }
 .header .punten img {
-	height:1.5em;
+	width:1.5vw;
 	vertical-align: middle;
 	display:inline-block;
 }
@@ -411,8 +411,7 @@ vertical-align: middle;
 	position:fixed;
 	/*width:100%;*/
 	top:0;
-	left:50%;
-	left:45%;
+	left:48.5vw;
 	top:0;
 	z-index: 2;
 	text-align: center;
@@ -509,11 +508,15 @@ nav .teaminfo {
 	background-color: #292425;
 	text-align: center;
 	position:relative;
-	flex:3 30%;
+	flex:2 20%;
+	box-sizing: border-box;
+	margin: 0 0;
+	padding: 0 0;
+
 }
 
 
-nav .teaminfo img {
+nav .teaminfo div img {
 	display: block;
 	margin:0 auto;
     width:150px;
@@ -523,31 +526,40 @@ nav .teaminfo img {
 }
 
 nav .teaminfo div {
+	height:15vh;
+	width:15vh;
+	left: calc(50% - 7.5vh);
+	right:10% !important;
 	border-radius: 50%;
+	display:block;
+	text-align: center;
 	overflow: hidden;
-	height:50px;
-    width: 50px;
-    margin:0 auto;
+	position:absolute;
     border:2px solid #79E425;
    
 }
-nav .teaminfo ul {
-	list-style:none;
+
+
+nav .teaminfo .nav_stats { 
+	list-style: none;
+	padding: 0 0;
+	flex:1 100%;
 	display:flex;
-	justify-content: space-between;
-	box-sizing: border-box;
+	flex-wrap: nowrap;
 	position:absolute;
+	bottom:0;
 	width:100%;
-	bottom:-20px;
+	margin: 0 0;
+	padding: 0  0;
+
 }
 
-nav .teaminfo ul li {
+nav .teaminfo .nav_stats li {
 	display:inline-block;
-	font-size: 12px;
-	vertical-align: middle;
-
-	flex:1;
-	padding:.5em;
+	flex:5 50%;
+	padding:.5vh 1vh;
+vertical-align: middle;
+	
 	background: #4c8d18; /* Old browsers */
 background: -webkit-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
 background: -o-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
@@ -555,19 +567,27 @@ background: linear-gradient(to top right, #4c8d18 0%, #75dc24 100%); /* FF3.6-15
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c8d18', endColorstr='#75dc24',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-nav .teaminfo ul li span {
+nav .teaminfo .nav_stats > li img {
+	height:3vh;
+	display:inline-block;
+	text-align: center;
+	padding: 0 0;
+	margin: 0 0;
+}
+nav .teaminfo .nav_stats li span {
+	float:right;
 	display:inline-block;
 	vertical-align: middle;
-	float:right;
-	padding: 0 1em;
 	color:white;
-}
+	line-height: 3vh;
+	font-size: .8em;
 
+}
 nav .main-nav{
 	background-color: blue;
 	display:flex;
 	flex-direction: column;
-	flex:6 60%;
+	flex:7 70%;
 }
 nav .sub-nav {
 	display:flex;
@@ -712,16 +732,37 @@ nav .sub-nav li a {
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 }
 .template-container-doelwit .target_foto {
-	width:100vw;
+	
 	height:80vh;
-	overflow:hidden;
+	width:100vw;
+	display:block;
+	text-align: center;
+	overflow: hidden ;
+	
+  
 
 
 }
 .template-container-doelwit .target_foto img {
-	min-width: 100vw;
-	min-height: 80vh;
+	
+	display: block;
+	margin:0 auto;
+    
+    
+   	min-width: 100%;
+	min-height: 100%;
 
+	overflow: hidden ;
+}
+
+
+nav .teaminfo div img {
+	
+}
+
+nav .teaminfo div {
+	
+   
 }
 
 .template-container-doelwit .target_info {
@@ -751,4 +792,100 @@ nav .sub-nav li a {
 	margin: 0 0;
 }
 
+.template-container-gevonden {
+	
+	margin: 0 0;
+	padding: 5vh 0;
+	background-image: url(/images/gevonden_bg.svg);
+	background-size: cover;
+	 -moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width:100%;
+	min-height:100vh;
+	
+}
 
+.template-container-challenges {
+	
+	margin: 0 0;
+	padding: 5vh 0;
+	background-image: url(/images/challenges_bg.svg);
+	background-size: cover;
+	 -moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width:100%;
+	min-height:100vh;
+	
+}
+.template-container-challenges > p {
+	background-color: rgba(237,116,37,.9);
+	color:white;
+	width:80vw;
+	margin:0 auto;
+	text-align: center;
+	box-sizing: border-box;
+	padding:1vh 5vw;
+	font-weight: lighter;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+}
+
+.template-container-challenges > ul {
+	width:80vw;
+	margin: 0 auto;
+	padding: 1em 0em;
+
+}
+.template-container-challenges > ul li {
+	position:relative;
+}
+.template-container-challenges > ul a {
+	text-decoration: none;
+	color:	#ED7425;
+		background-color: white;
+	height:1em;
+	padding:.5em 1em .5em 3em;
+	display:block;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+}
+.template-container-challenges > ul p {
+	display:inline-block;
+	font-size: 1em;
+	height:1em;
+	line-height: 1em;
+	padding: 0 0;
+	margin: 0 0;
+}
+.template-container-challenges ul li div {
+	height:2.5em;
+	display:inline-block;
+	width:2.5em;
+	position:absolute;
+	left:-.5em;
+	top:-.35em;
+	border-radius: 50%;
+	border: 2px solid white;
+	background-color: #ED7425;
+	text-align: center;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+
+}
+.template-container-challenges > ul span {
+	box-sizing: border-box;
+	display:block;
+	line-height: 2.5em;
+	display:inline-block;
+	color:white;
+
+	
+}
+.template-container-challenges > ul img {
+	display:inline-block;
+	height:1em;
+	float:right;
+}

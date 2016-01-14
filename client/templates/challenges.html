@@ -1,10 +1,20 @@
 <template name="challenges">
+	<div class="template-container-challenges">
+	<p>Voltooi challenges om hints over jullie target vrij te spelen</p>
 
-  	{{#each challenges}}
-    	<div class="challenge">
-    		<a href="{{pathFor 'challenge'}}" title=""><p>{{name}}</p><p>{{punten}}</p></a>
+	<ul>
+		{{#each challenges}}
+    	<li class="challenge">
+    		<a href="{{pathFor 'challenge'}}" title="">
+    			<div><span>{{punten}}</span></div>
+    			<p>{{name}}</p>
+    			<img src="images/challenge_go_to_icon.svg" alt="">
+    		</a>
 
-    	</div>
+    	</li>
   	{{/each}}
+	</ul>
+  	
   <input type="checkbox" value="TeamOpslaan" class="saveTeam">Team Opslaan
+	</div>
 </template>
