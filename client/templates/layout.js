@@ -10,6 +10,20 @@ Template.layout.helpers({
     var teamId = Meteor.user().profile.teamid
     var teamImg = Teams.findOne(teamId).imagesURL
     return Images.findOne(teamImg)
+  },
+  targetsfound:function() {
+    var teamId = Meteor.user().profile.teamid
+    return Teams.findOne(teamId).foundtargets.length
+  },
+  teams: function(){
+    return Teams.find({},{sort:{Score:-1}})
+  },
+  leaderbordpositie:function(index) {
+    var teamId = Meteor.user().profile.teamid
+    var i=index+1
+    if (this._id===teamId) {
+        return i
+    };
   }
 });
 

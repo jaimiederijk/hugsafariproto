@@ -44,9 +44,11 @@ Template.teamAanmelden.events({
       return
     };
     // var team = {"profile.teamname":event.target.value};
-
+    var userId = Meteor.userId();
     // Meteor.users.update(userId, {$set: team});
     Teams.insert({
+      Score:0,
+      challengescore:0,
       createdBy: Meteor.userId(),
       createdAt: new Date(),
       teamName: teamName ,
@@ -54,15 +56,13 @@ Template.teamAanmelden.events({
       targetteamID:"",
       foundtargets:[],
       challenges:[],
-      teammembers:[Meteor.userId()],
+      teammembers:[userId],
       points:0 
 
     }, function (err, fileObj) {
       var userId = Meteor.userId();
       var teamID = {"profile.teamid":fileObj };
-
-      //clear images profile
-      var userId = Meteor.userId();
+     
       var imagesURL = {
               "profile.image":  ""
             };

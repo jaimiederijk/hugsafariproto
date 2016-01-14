@@ -1,16 +1,27 @@
 <template name="challenge">
   <div class="template-container-challenge">
+	
+		<!-- {{#if profimage}} -->
+	{{#with profimage}}
+			<img src={{this.url}} alt="profimg">
+	{{else}}
+			<img src={{images}} alt="">
+	{{/with}}
+
 	{{#with challenge}}	
-		<img src="{{images}}" alt="">
 		<h2>{{name}}</h2>		
 		<div><span>{{punten}}</span></div>
 		
 	{{/with}}	
 	<input type="file" name="file" id="file" class="myFileInput">
-  	<div class="imageView">
+  	<!-- <div class="imageView">
 	  	{{> profileimage }}
-	  	<button type="button" class="button disabled" disabled="true">Complete Challenge</button>
-  	</div>
-  	<button type="button" class="submitchallenge">submit challenge</button>
+
+	  	
+  	</div> -->
+  	<label for= "file">
+  		<button type="button" class="submitchallenge">submit challenge<img src=/images/lens.svg alt=""></button>
+  	</label>
+  	<button type="button" class="button disabled" disabled="true">Complete Challenge</button>
   </div>
 </template>

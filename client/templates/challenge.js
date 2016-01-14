@@ -6,6 +6,13 @@ Template.challenge.helpers({
   	var count = this.imagesURLS.length
   	var random = Math.floor(Math.random() * (count)) ;
   	return this.imagesURLS[random];
+  },
+  profimage:function() {
+    if (!$.isEmptyObject(Meteor.user().profile.image)) {
+      return Images.findOne(Meteor.user().profile.image) //Meteor.user().profile.image
+    } else {
+      return false
+    }
   }
 });
 
@@ -48,6 +55,11 @@ Template.challenge.events({
       }
 
       Teams.update({ _id: teamId },{ $set: currentPoints})
+
+      var pointsScore = {
+        "challengescore":points
+      }
+      Teams.update({ _id: teamId },{ $inc: pointsScore})
 
       var img = {
       "imagesURLS":"/cfs/files/images/" + Meteor.user().profile.image                     

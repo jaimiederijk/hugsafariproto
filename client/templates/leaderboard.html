@@ -2,15 +2,19 @@
 	<button type="button" id="challengesleaderbord" class="disabled" disabled="true">challenges</button>
 	<button type="button" id="gevondenleaderbord">gevonden</button>
 	<div class="challengelist">
-		{{#each teams}}
-			<p>team:{{teamName}} totaal: {{points}}</p>
-		{{/each}}
+		<ul>
+			{{#each challengeTeams}}
+				<li>{{add @index}} team:{{teamName}} totaal: {{points}}</li>
+			{{/each}}
+		</ul>
 	</div>
 	<div class="gevondenlist displayNone">
-		{{#each teams}}
-			<p>team:{{teamName}} aantal targets:{{findCount}}</p>
+		<ul>
+			{{#each teams}}
+				<li>{{add @index}} team:{{teamName}} aantal targets:{{findCount}}</li>
 
-		{{/each}}
-		<p></p>
+			{{/each}}
+		</ul>
+		
 	</div>
 </template>

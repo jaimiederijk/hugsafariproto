@@ -27,8 +27,12 @@
 
 				</div>
 				<ul class="nav_stats">
-					<li><img src="/images/nav_icon_gevonden_targets2.svg" alt="Poule Positie"> <span>3</span></li>
-					<li><img src="/images/nav_icon_leaderboard_wit.svg" alt="Poule Positie"> <span>51</span></li>
+					<li><img src="/images/nav_icon_gevonden_targets2.svg" alt="Poule Positie"> <span>{{targetsfound}}</span></li>
+					<li><img src="/images/nav_icon_leaderboard_wit.svg" alt="Poule Positie"> <span>
+						{{#each teams}}
+							{{leaderbordpositie @index}}
+						{{/each}}
+					</span></li>
 				</ul>
 			</div>
 	      	<ul class="main-nav">

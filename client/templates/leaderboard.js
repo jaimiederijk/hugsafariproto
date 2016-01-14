@@ -1,6 +1,9 @@
 Template.leaderboard.helpers({
   teams: function(){
-    return Teams.find()
+    return Teams.find({},{sort:{Score:-1}})
+  },
+  challengeTeams: function(){
+    return Teams.find({},{sort:{challengescore:-1}})
   },
   findCount: function() {
     return this.foundtargets.length
@@ -15,6 +18,10 @@ Template.leaderboard.helpers({
       totalPoints += teamChallenges[i].punten
     };
     return totalPoints
+  },
+  add:function(index) {
+    var i=index+1
+    return i
   }
 });
 

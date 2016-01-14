@@ -684,16 +684,6 @@ nav .sub-nav li a {
 .template-container-doelwit .target_info.teamnaam_omlaag {
 	top:60vh;
 }
-/*challenge pagina  Jaimie*/
-.template-container-challenge .imageView {
-	position: absolute;
-	-webkit-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
-    top: -1600px;
-}
-.template-container-challenge .showUpload {
-    top: 71px;
-}
 
 /*doelwit slider*/
 .template-container-doelwit {
@@ -901,7 +891,7 @@ nav .teaminfo div {
 
 }
 
-.template-container-challenge img {
+.template-container-challenge > img {
 	height:80vw;
 	border:10px solid white;
 	background-size: 100% 100%;
@@ -915,4 +905,10 @@ nav .teaminfo div {
 	width:80%;
 	margin: 0 auto;
 	text-align: left
+}
+
+.template-container-challenge label button img {
+    width: 1vw;
+    position: absolute;
+    margin-left: 3vw;
 }

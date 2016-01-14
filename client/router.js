@@ -2,7 +2,12 @@ Router.configure({
   	layoutTemplate: 'layout',
   	loadingTemplate: 'loading',
   	waitOn: function () {
-	 return Meteor.subscribe('teams')
+	 return [
+      Meteor.subscribe('teams'),
+      Meteor.subscribe('challenges'),
+      Meteor.subscribe('userList'),
+      Meteor.subscribe('images')
+      ];
 	}
 });
 

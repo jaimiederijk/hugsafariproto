@@ -47,6 +47,8 @@ Template.gevonden.events({
       };
       Teams.update({ _id: teamId },{ $push: foundData})
 
+      Teams.update({_id:teamId},{$inc:{Score:1}})
+
       //clear images profile
       var userId = Meteor.userId();
       var imagesURL = {
