@@ -19,30 +19,32 @@ Template.layout.events({
     $('nav').toggleClass("inactive");
     $('.nav-knop').toggleClass("omhoog");
     $('.overlay').toggleClass("donker");
+    $('.target_icon img').toggleClass("weg");
     
 },
-// 'click .main-nav li a': function() {
-//     console.log("go");
-//     $('nav').toggleClass("inactive");
-//     $('.nav-knop').toggleClass("omhoog");
-//     $('.overlay').toggleClass("donker");
+'click .main-nav li a': function() {
+    console.log("go");
+    $('nav').toggleClass("inactive");
+    $('.nav-knop').toggleClass("omhoog");
+    $('.overlay').toggleClass("donker");
+    $('.target_icon img').removeClass("weg");
     
-// },
-	'click .target_icon img': function() {
-		console.log("go")
+},
+	'click .target_icon': function() {
+		console.log("go2")
     $('.overlay').toggleClass("donker");
     $('.target_icon img').toggleClass("target_icon_down");
     $('.template-container-doelwit').toggleClass("omlaag");
-    $('.template-container-doelwit .target_info').toggleClass("teamnaam_omlaag")
+    
 },
     'click .donker': function() {
         console.log("go")
     $('.donker').removeClass("donker");
     $('.target_icon img').removeClass("target_icon_down");
     $('.template-container-doelwit').removeClass("omlaag");
-    $('.template-container-doelwit .target_info').removeClass("teamnaam_omlaag");
     $('nav').addClass("inactive");
     $('.nav-knop').removeClass("omhoog");
+    $('.target_icon img').toggleClass("weg");
 }
 });
 
