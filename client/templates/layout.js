@@ -27,6 +27,15 @@ Template.layout.events({
     $('.target_icon img').toggleClass("target_icon_down");
     $('.template-container-doelwit').toggleClass("omlaag");
     $('.template-container-doelwit .target_info').toggleClass("teamnaam_omlaag")
+},
+    'click .donker': function() {
+        console.log("go")
+    $('.donker').removeClass("donker");
+    $('.target_icon img').removeClass("target_icon_down");
+    $('.template-container-doelwit').removeClass("omlaag");
+    $('.template-container-doelwit .target_info').removeClass("teamnaam_omlaag");
+    $('nav').addClass("inactive");
+    $('.nav-knop').removeClass("omhoog");
 }
 });
 

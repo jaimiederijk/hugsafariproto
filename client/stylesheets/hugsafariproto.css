@@ -177,6 +177,9 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
 
 .go_to_aanmeld img {
 	width:2em;
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
 }
 /*Team aanmelden formulier --- Roos*/
 .template-container-teamAanmelden {
@@ -409,6 +412,8 @@ vertical-align: middle;
 	/*width:100%;*/
 	top:0;
 	left:50%;
+	left:45%;
+	top:0;
 	z-index: 2;
 	text-align: center;
 	padding:.5em;
@@ -419,8 +424,8 @@ vertical-align: middle;
 	
 	position:relative;
 	bottom:0;    
-    -webkit-transition:bottom .5s;
-    transition:bottom .5s;
+    -webkit-transition:bottom .5s ease-in-out;
+    transition:bottom .5s ease-in-out;
 	height:1.5em;
 	-ms-transform: rotate(180deg); /* IE 9 */
     -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
