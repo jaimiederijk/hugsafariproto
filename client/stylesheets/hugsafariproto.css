@@ -468,7 +468,7 @@ img.target_icon_down {
 
 
 .inactive {
-	left:-2000px;
+	left:-85vw;
 }
 
 nav .extra {
@@ -488,8 +488,8 @@ nav {
 	left:0;
 	box-sizing: border-box;
 	padding: 0 0;
-	 -webkit-transition: left .5s ease-in-out;
-    transition: left 2s ease-in-out;
+	 -webkit-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out;
 	margin: 0 0;
 	display:flex;
 	flex-direction: column;
@@ -710,8 +710,8 @@ nav .sub-nav li a {
 /*challenge pagina  Jaimie*/
 .template-container-challenge .imageView {
 	position: absolute;
-	-webkit-transition: .5s ease-in-out;
-    transition: 2s ease-in-out;
+	-webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
     top: -1600px;
 }
 .template-container-challenge .showUpload {
@@ -724,9 +724,9 @@ nav .sub-nav li a {
 	position:fixed;
 	width:100vw;
 	height:80vh;
-	top:-2000px;
-	 -webkit-transition: top .5s ease-in-out;
-    transition: top 2s ease-in-out;
+	top:-85vh;
+	 -webkit-transition: top .2s ease-in-out;
+    transition: top .2s ease-in-out;
     -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
@@ -776,8 +776,8 @@ nav .teaminfo div {
 	left:20vw;
 	right:20vw;
 	top:-2000px;
-	 -webkit-transition: top .5s ease-in-out;
-    transition: top 2s ease-in-out;
+	 -webkit-transition: top .2s ease-in-out;
+    transition: top .2s ease-in-out;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
@@ -839,12 +839,14 @@ nav .teaminfo div {
 }
 .template-container-challenges > ul li {
 	position:relative;
+	margin-top:1em;
+	margin-left:1em;
 }
 .template-container-challenges > ul a {
 	text-decoration: none;
 	color:	#ED7425;
 		background-color: white;
-	height:1em;
+	
 	padding:.5em 1em .5em 3em;
 	display:block;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
@@ -864,8 +866,8 @@ nav .teaminfo div {
 	display:inline-block;
 	width:2.5em;
 	position:absolute;
-	left:-.5em;
-	top:-.35em;
+	left:-1.5em;
+	top:0;
 	border-radius: 50%;
 	border: 2px solid white;
 	background-color: #ED7425;
@@ -888,4 +890,33 @@ nav .teaminfo div {
 	display:inline-block;
 	height:1em;
 	float:right;
+}
+
+.template-container-challenge {
+	margin: 0 0;
+	padding: 5vh 0;
+	background-image: url(/images/challenges_detail_bg.svg);
+	background-size: cover;
+	 -moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width:100%;
+	min-height:100vh;
+	text-align: center;
+
+}
+
+.template-container-challenge img {
+	height:80vw;
+	border:10px solid white;
+	background-size: 100% 100%;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	margin:.5em auto;
+	text-align: center;
+}
+.template-container-challenge h1 {
+	width:80%;
+	margin: 0 auto;
+	text-align: left
 }

@@ -1,9 +1,10 @@
 <template name="challenge">
   <div class="template-container-challenge">
 	{{#with challenge}}	
-		<h2>{{name}}</h2>		
-		<p>{{punten}}</p>
 		<img src="{{images}}" alt="">
+		<h2>{{name}}</h2>		
+		<div><span>{{punten}}</span></div>
+		
 	{{/with}}	
 	<input type="file" name="file" id="file" class="myFileInput">
   	<div class="imageView">
