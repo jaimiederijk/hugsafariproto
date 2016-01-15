@@ -25,8 +25,7 @@ body, html {
 	font-family: "Futura";
 }
 body {
-	padding-top:4.5em;
-	
+	/*padding-top:4.5em; uncomment om weer te kunnen inloggen*/	
 }
 h1, h2, h3, h4 {
 	font-weight: 200;
@@ -391,8 +390,8 @@ font-family: "futura";
 
 .header .nav-knop {
 	float:left;
-	height:3vh;
-	width:3vh;
+	height:5vh;
+	width:5vh;
 }
 .header .punten {
 	padding: 0 0;
