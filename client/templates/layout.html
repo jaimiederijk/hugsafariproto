@@ -1,23 +1,17 @@
 <template name="layout">
 	<header>
 
-		  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-		  
-		<div class="subheader">{{> doelwit }}</div>
-		{{#if currentUser}}
-			<div class="target_icon"><img src="/images/target_icon.svg" alt=""></div>
-		{{/if}}
-
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		
 		<div class="header">
 			{{#if currentUser}}
-				<img class="nav-knop" src="/images/icon_hamburger.png" alt="">
+				<img class="nav-knop" src="/images/icon_hamburger2.png" alt="">
 			{{/if}}
 			<!-- <span class="titel">{{paginatitel}}</span> -->
-			<span class="punten"><p>{{ punten }}</p> <img src="/images/icon_punten_orange.svg" alt=""></span>
+			<p class="punten"><span>|</span>{{ punten }} punten<span>|</span></p>
 		</div>
 
 		<nav class="inactive" >
-			<div class="extra"><img class="nav-knop" src="/images/icon_hamburger.png" alt=""></div>
 			<div class='teaminfo'>
 				<!-- test image vervangen door user image -->
 				<div>
@@ -27,35 +21,43 @@
 
 				</div>
 				<ul class="nav_stats">
-					<li><img src="/images/nav_icon_gevonden_targets2.svg" alt="Poule Positie"> <span>{{targetsfound}}</span></li>
-					<li><img src="/images/nav_icon_leaderboard_wit.svg" alt="Poule Positie"> <span>
-						{{#each teams}}
+					<li>Targets <span>{{targetsfound}}</span></li>
+					<li>Leaderbord
+						<span>{{#each teams}}
 							{{leaderbordpositie @index}}
-						{{/each}}
-					</span></li>
+						{{/each}}</span>
+					</li>
 				</ul>
 			</div>
 	      	<ul class="main-nav">
-					<li><a href="{{pathFor 'targetPagina'}}"><img src="/images/nav_icon_home_groen.svg" alt=""><p>Hugsafari</p></a></li>
+					<li><a href="{{pathFor 'targetPagina'}}"><p>Hugsafari</p></a></li>
 
 
-					<li><a href="{{pathFor 'leaderboard'}}"><img src="/images/nav_icon_leaderboard_groen.svg" alt=""><p>Leaderboard</p></a></li>
-					<li><a href="{{pathFor 'challenges'}}"><img src="/images/nav_icon_challenges_groen.svg" alt=""><p>Challenges</p></a></li>
+					<li><a href="{{pathFor 'leaderboard'}}"><p>Leaderboard</p></a></li>
+					<li><a href="{{pathFor 'challenges'}}"><p>Challenges</p></a></li>
 
 				
 
-					<li><a href="#"><img src="/images/nav_icon_fotostream_groen.svg" alt=""><p>Fotostream</p></a></li>
+					<li><a href="#"><p>Fotostream</p></a></li>
 			</ul>
 			<ul class='sub-nav'>
-					<li><a href="#"><img src="/images/nav_icon_settings_wit.svg" alt=""><p>settings</p></a></li>
-					<li><a href="#"><img src="/images/nav_icon_team_wit.svg" alt=""><p>Team</p></a></li>
-					<li><a href="#"><img src="/images/nav_icon_help_wit.svg" alt=""><p>help</p></a></li>
+					<li><a href="#"><img src="/images/nav_icon_settings_wit.svg" alt=""></a></li>
+					<li><a href="#"><img src="/images/nav_icon_team_wit.svg" alt=""></a></li>
+					<li><a href="#"><img src="/images/nav_icon_help_wit.svg" alt=""></a></li>
 			</ul> 
 
 		</nav>
 
 
 	</header>
+<!-- 
+	<div class="target-div-container">
+		<div class="target-container">{{> doelwit }}</div>
+		{{#if currentUser}}
+		<div class="target_icon"><img src="/images/target_icon.svg" alt=""></div>
+		{{/if}}
+
+	</div> -->
 	<div class="overlay"></div>
 	<div class="container">
 

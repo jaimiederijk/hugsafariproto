@@ -31,34 +31,40 @@ Template.layout.events({
 	'click .nav-knop': function() {
 		console.log("go");
     $('nav').toggleClass("inactive");
-    $('.nav-knop').toggleClass("omhoog");
     $('.overlay').toggleClass("donker");
-    $('.target_icon img').toggleClass("weg");
+    $('.container').toggleClass("body_schuif");
+    $('.header').toggleClass("header_schuif");
+
+
     
 },
 'click .main-nav li a': function() {
     console.log("go");
-    $('nav').toggleClass("inactive");
-    $('.nav-knop').toggleClass("omhoog");
-    $('.overlay').toggleClass("donker");
-    $('.target_icon img').removeClass("weg");
+    $('nav').addClass("inactive");
+    // $('.nav-knop').toggleClass("omhoog");
+    $('.overlay').removeClass("donker");
+     $('.header').removeClass("header_schuif");
+     $('.container').removeClass("body_schuif");
+    // $('.target_icon img').removeClass("weg");
     
 },
 	'click .target_icon': function() {
 		console.log("go2")
-    $('.overlay').toggleClass("donker");
-    $('.target_icon img').toggleClass("target_icon_down");
-    $('.template-container-doelwit').toggleClass("omlaag");
+    // $('.overlay').toggleClass("donker");
+    // $('.target_icon img').toggleClass("target_icon_down");
+    // $('.template-container-doelwit').toggleClass("omlaag");
     
 },
     'click .donker': function() {
         console.log("go")
     $('.donker').removeClass("donker");
-    $('.target_icon img').removeClass("target_icon_down");
-    $('.template-container-doelwit').removeClass("omlaag");
+    // $('.target_icon img').removeClass("target_icon_down");
+    // $('.template-container-doelwit').removeClass("omlaag");
     $('nav').addClass("inactive");
-    $('.nav-knop').removeClass("omhoog");
-    $('.target_icon img').toggleClass("weg");
+    // $('.nav-knop').removeClass("omhoog");
+    // $('.target_icon img').toggleClass("weg");
+    $('.container').removeClass("body_schuif");
+    $('.header').removeClass("header_schuif");
 }
 });
 
