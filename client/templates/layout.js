@@ -40,26 +40,32 @@ Template.layout.events({
 	'click .nav-knop': function() {
 		console.log("go");
     $('nav').toggleClass("inactive");
-    $('.nav-knop').toggleClass("omhoog");
     $('.overlay').toggleClass("donker");
-    $('.target_icon img').toggleClass("weg");
+    $('.container').toggleClass("body_schuif");
+    $('.header').toggleClass("header_schuif");
+
+
     
 },
   'click .main-nav li a': function() {
     console.log("go");
+
     $('nav').toggleClass("inactive");
     $('.nav-knop').toggleClass("omhoog");
     $('.overlay').toggleClass("donker");
     $('.target_icon img').removeClass("weg");
+
 },
     'click .donker': function() {
         console.log("go")
     $('.donker').removeClass("donker");
-    $('.target_icon img').removeClass("target_icon_down");
-    $('.template-container-doelwit').removeClass("omlaag");
+    // $('.target_icon img').removeClass("target_icon_down");
+    // $('.template-container-doelwit').removeClass("omlaag");
     $('nav').addClass("inactive");
-    $('.nav-knop').removeClass("omhoog");
-    $('.target_icon img').toggleClass("weg");
+    // $('.nav-knop').removeClass("omhoog");
+    // $('.target_icon img').toggleClass("weg");
+    $('.container').removeClass("body_schuif");
+    $('.header').removeClass("header_schuif");
 }
 });
 

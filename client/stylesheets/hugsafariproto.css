@@ -24,16 +24,16 @@ svg {
 body, html {
 	padding: 0 0;
 	margin: 0 0;
-	font-family: "Futura";
+	font-family: "DINPro";
+	text-transform: uppercase;
 }
 body {
 	/*padding-top:4.5em; uncomment om weer te kunnen inloggen*/	
-}
-h1, h2, h3, h4 {
-	font-weight: 200;
-	color:white;
+	background:url(/images/bgv2.svg);
+
 	
 }
+
 h1 {
 	font-size: 4.23em;
 	text-align:center;
@@ -60,21 +60,12 @@ li {
 	
 }
 li > a.knop, button {
-	font-family: "futura";
+	font-family: "DINPro";
 	font-size:1em;
 	text-decoration:none;
 	display:block;
-	padding:.5em 1em;
-	border:none;
-	color:white;
-	background-color: #79E425;
+	padding:.5em 1em;	
 	text-align:center;
-	width: 80%;
-	max-width: 300px;
-	margin:.5em auto;
-	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
-	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
 	
 
 }
@@ -107,13 +98,370 @@ label * {
 	background-color: green;
 	padding: 1em;
 }
-img {
-	max-width: 600px;
-}
+
 .disabled {
 	color: #635757;
     background-color: grey;
 }
+
+/* ===================    Overzichtspagina (targetpage.html) ====== */
+.template-container-targetPagina {
+	box-sizing: border-box;
+	min-height:100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.template-container-targetPagina h3 {
+	margin: 0 auto;
+	width:80vw;
+	margin-top: 2em;
+}
+.template-container-targetPagina .target_foto {
+	width:100vw;
+	max-height: 80vw;
+}
+.knop {
+	margin:1.2em auto;
+}
+.knop.gevonden {
+	color:black;
+	width:60%;
+	padding:.7em 0;
+	background-color: white;
+	border:.4em solid black;
+}
+.knop.challenges {
+	background-color: black;
+	font-size: .8em;
+	color:white;
+	width:40%;
+	padding:.7em;
+	
+}
+.hints-list {
+
+	display:flex;
+	flex-wrap: wrap;
+}
+.hints-list li  {
+	flex:2 40%;
+	height:30vw;
+	margin-top:.2em;
+}
+
+.hints-list li a {
+	display:flex;
+	font-size: .8em;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	height:100%;
+	text-decoration: none;
+	color:black;
+	background-color: rgba(0,0,0,.5);
+	box-sizing: border-box;
+
+
+}
+.hints-list li:nth-child(odd) a {
+	margin-right:.1em;
+}
+.hints-list li:nth-child(even) a {
+	margin-left:.1em;
+}
+.hints-list li a > * {
+	
+	margin:  0 0;
+	padding: 0 0;
+}
+.hints-list .hint-done a {
+	background-color: #e67e22;
+	border:none;
+	color:white;
+	padding:5px;
+
+}
+.hints-list span {
+	font-size: 1.4em;
+	color: #e67e22;;
+}
+.hint-done span {
+	display:none;
+}
+
+/* ========================== Header =====================*/
+.header {
+	position:fixed;
+	background:url(/images/bgv2.svg);
+	background-color: white;
+	top:0;
+	left:0;
+	width:100%;
+	text-align: center;
+	padding:.5em 1.5em ;
+	box-sizing: border-box;
+	z-index: 5;
+	-webkit-transition: -webkit-transform 0.2s;
+  	-moz-transition: -moz-transform 0.2s;
+  	transition: transform 0.2s;
+
+}
+
+.header .nav-knop {
+	position:fixed;
+	left:1.5em;
+	height:1.2em;
+	width:1.5em;
+}
+.header .punten {
+	
+	margin: 0 0;
+	text-align: right;
+	
+}
+
+.header .punten span {
+	color:#e67e22;
+
+}
+/* ========================== Target =====================*/
+.target_icon {
+	position:fixed;
+	width:50vw;
+	left:25vw;
+	top:0;
+	z-index: 6;
+	text-align: center;
+	padding:2vh 0;
+	
+}
+.target_icon img {
+	
+	position:relative;
+	vertical-align: middle;  
+    -webkit-transition:bottom .5s ease-in-out;
+    transition:bottom .5s ease-in-out;
+	height:4vh;
+	width:4vh;
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+	
+}
+
+img.target_icon_down {
+-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg) ;
+    
+    bottom:-85vh ;
+}
+
+
+/*========= Navigatie animatie ============*/
+
+.inactive {
+	left:-85vw;
+}
+
+.nav_knop_schuif {
+	left:81vw !imp;
+}
+.container {
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+  	-moz-transition: -moz-transform .2s ease-in-out;
+  	transition: transform .2s ease-in-out;;
+}
+.body_schuif {
+	-webkit-transform: translateX(79vw);
+  	-moz-transform: translateX(79vw);
+  	transform: translateX(79vw);
+}
+.header_schuif {
+	-webkit-transform: translateX(79vw);
+  	-moz-transform: translateX(79vw);
+  	transform: translateX(79vw);
+
+}
+.overlay {
+	background-color: rgba(0,0,0)
+	 -webkit-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+}
+.donker {
+	background-color: rgba(0,0,0,.5) !important;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100vw;
+	height:100vh;
+
+	z-index: 1
+}
+/*========= Navigatie knop animatie ============*/
+/*link voor animatie:	
+
+/* ========================== Navigatie =====================*/
+
+nav {
+	background-color: black; 
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:80vw;
+	z-index: 10;
+	-webkit-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out;
+}
+nav > * {
+	padding: 0 0;
+	margin: 0 0;
+	box-sizing: border-box !important;
+	width:100%;
+
+}
+
+
+
+nav .teaminfo {
+	height:33vh;
+	display:block;
+	position:relative;
+	border-top:2em solid black;
+}
+nav .main-nav {
+	height:57vh;
+	list-style: none;
+	padding: 0 0;
+	display:flex;
+	flex-direction: column;
+
+}
+nav .sub-nav {
+	height:10vh;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+nav .extra img {
+	height:3vh;
+	width:3vh;
+	margin-top:.2em;
+	float:right;
+}
+nav .teaminfo div {
+	position:absolute;
+	width:100%;
+	display:block;
+	overflow: hidden;
+	height:100%;
+   
+}
+nav .teaminfo div img {
+	display: block;
+	margin:0 auto;
+  	width:5px;
+  	top:-10%;
+    position:absolute;
+    height:auto;
+   	min-width: 100%;
+	min-height: 100%;
+}
+
+nav .main-nav li {
+	
+	flex:2 25%;
+	position:relative;
+}
+nav .main-nav li a {
+	text-decoration: none;
+	color:white;
+	font-size: .8em;
+	font-weight: 200;
+	text-align: center;
+	display:inline-block;
+	width:100%;
+	height:100%;
+	padding-top:5vh;
+	box-sizing: border-box;
+	position:absolute;
+	
+
+}
+
+nav .sub-nav {
+	display:flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+nav .sub-nav li {
+	flex: 3 33%;
+	text-align: center;
+	box-sizing: border-box;
+}
+nav .sub-nav li a {
+	display:block;
+	color:white;
+	text-decoration: none;
+}
+
+nav .sub-nav img {
+	height:1.2em;
+	padding:1.5em .2em 1.2em .2em;
+	flex:1 100%;
+	margin:0 0;
+}
+nav .sub-nav li  p {
+	flex:1 100%;
+	margin-top:0;
+	font-size: .8em;
+
+}
+nav .sub-nav li a {
+	text-decoration: none;
+	color:white;
+	display:block;
+	display:flex;
+	flex-direction: column;
+}
+
+
+.nav_stats {
+	position:absolute;
+	bottom:0;
+	list-style: none;
+	display:flex;
+	background-color: white;
+	width:80vw;
+	margin: 0 0;
+}
+.nav_stats li {
+	display:inline-block;
+	flex:5 50%;
+	text-align: center;
+	font-size: .7em;
+	font-weight: 200;
+	padding:.5em;
+}
+.nav_stats li:first-of-type {
+	border-right:5px solid black;
+}
+.nav_stats li span {
+	color:#e67e22;
+	font-weight: 700;
+}
+nav span.lijn {
+	background-color: white;
+	height:1px;
+	width:20vw;
+	margin: 0 auto;
+	display:block;
+}
+/* =================  Vanaf hier wordt het kut ========== */
 
 /*startpagina ---- Roos*/
 /* / voor de images! 
@@ -204,7 +552,7 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
 	border:none;
 	width:80vw;
 	text-align: center;
-	font-family: "futura";
+	font-family: "DINPro";
 	font-size: 1em;
 	display:block;
 	padding:.5em 0;
@@ -252,7 +600,7 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
 	background-repeat: no-repeat;
 }
 .template-container-teamToevoegen span{
-font-family: "futura";
+	font-family: "DINPro";
 	font-size:1em;
 	text-decoration:none;
 	display:block;
@@ -269,416 +617,8 @@ font-family: "futura";
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
 }
 
-/*Target Pagina ---Roos*/
 
-.template-container-targetPagina {
-	box-sizing: border-box;
-	min-height:100vh;
-	padding-top:2em;
-	background:url(/images/overzicht_bg.svg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.template-container-targetPagina h2 {
-	margin: 0 auto;
-	
-	width:80vw;
-
-	
-
-}
-
-.template-container-targetPagina > ul li:first-of-type a {
-	background-color: #ED7425;
-}
-
-.hints-list {
-	list-style: none;
-	display:flex;
-	width:80vw;
-	margin:0 auto;
-	justify-content: space-between;
-	flex-flow: row wrap;
-	align-items: stretch;
-}
-.hints-list li {
-	display:block;
-	box-sizing: border-box;
-	width:30vw;
-	height:30vw;
-	margin: .5em;
-	text-align: center;
-	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
-	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
-
-}
-.hints-list li > a {
-	display:block;
-	height:100%;
-	text-decoration: none;
-	position:relative;
-	
-}
-.hints-list li > a > p {
-	color:black;
-	margin: 0 0;
-	position:absolute;
-	bottom:5px;
-	width:100%;
-
-	
-}
-.hints-list li:not(.hint-done) {
-	background-color: white;
-
-}
-.hints-list .hint-done {
-	background-color: #79E425;	
-	color:white;
-	border:5px solid white;
-}
-.hints-list .hint-done p {
-	color:white;
-}
-.hints-list li > * > *{
-	
-}
-
-.hints-list .hint-done div p {
-	display:none;
-
-}
-.hints-list li a img {	
-	width:100%;
-	height:100%;
-	box-sizing: border-box;
-	position:absolute;
-	left:0;
-	top:0;
-	padding:10% 30%;
-
-}
-.hints-list div {
-	height:20px;
-}
-.hints-list div p {
-	box-sizing: border-box;
-	display:block;
-	background-color: #ED7425;
-	border: 2px solid white;
-	float:right;
-	border-radius: 100%;
-	position:relative;
-	left:15px;
-	top:-15px;
-	display:inline-block;
-	color:white;
-	padding: .5em;
-	margin: 0 0;
-}
-
-.header {
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	
-	padding:.5em 1em .5em 1em;
-	background-color: #79E425;
-	text-align: center;
-
-}
-
-.header .nav-knop {
-	float:left;
-	height:5vh;
-	width:5vh;
-}
-.header .punten {
-	padding: 0 0;
-	margin: 0 0;
-	float:right;
-	margin-right: 2em;
-	height:2em;
-	display:inline-block;
-}
-.header .punten img {
-	height:3vh;
-	vertical-align: middle;
-	display:inline-block;
-}
-.header .punten p {
-	display:inline-block;
-	color:white;
-	padding: 0 0;
-vertical-align: middle;
-	margin:0 0;
-}
-.target_icon {
-	position:fixed;
-	width:50vw;
-	left:25vw;
-	top:0;
-	z-index: 6;
-	text-align: center;
-	padding:2vh 0;
-	
-}
-.target_icon img {
-	
-	position:relative;
-	vertical-align: middle;  
-    -webkit-transition:bottom .5s ease-in-out;
-    transition:bottom .5s ease-in-out;
-	height:4vh;
-	width:4vh;
-	-ms-transform: rotate(180deg); /* IE 9 */
-    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
-	
-}
-
-img.target_icon_down {
--ms-transform: rotate(0deg); /* IE 9 */
-    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-    transform: rotate(0deg) ;
-    
-    bottom:-85vh ;
-}
-
-
-.weg {
-	display:none;
-}
-
-.inactive {
-	left:-85vw;
-}
-
-nav {
-	background-color: #292425; 
-	position:fixed;
-	top:0;
-	left:0;
-	width:80vw;
-	z-index: 3;
-	-webkit-transition: left .2s ease-in-out;
-    transition: left .2s ease-in-out;
-}
-nav > * {
-	padding: 0 0;
-	margin: 0 0;
-	box-sizing: border-box !important;
-	width:100%;
-}
-
-nav .extra {
-	height:8vh;
-	padding:.5em;
-}
-
-nav .teaminfo {
-	height:17vh;
-	display:block;
-	position:relative;
-}
-nav .main-nav {
-	height:65vh;
-}
-nav .sub-nav {
-	height:10vh;
-}
-
-nav img {
-
-}
-nav .extra {
-
-}
-nav .extra img {
-	height:3vh;
-	width:3vh;
-	margin-top:.2em;
-	float:right;
-}
-nav .teaminfo div {
-	height:10vh;
-	width:10vh;
-	left: calc(50% - 5vh);
-	right:10% !important;
-	border-radius: 50%;
-	display:block;
-	text-align: center;
-	overflow: hidden;
-	position:absolute;
-    border:2px solid #79E425;
-   
-}
-nav .teaminfo div img {
-	display: block;
-	margin:0 auto;
-    width:50px;
-    height:auto;
-   	min-width: 100%;
-	min-height: 100%;
-}
-
-
-nav .teaminfo .nav_stats { 
-	list-style: none;
-	display:flex;
-	position:absolute;
-	bottom:0;
-	width:100%;
-	margin: 0 0;
-	padding: 0 0;
-
-}
-
-nav .teaminfo .nav_stats li {
-	height:3vh;
-	flex:5 50%;
-	padding: .2em 1em;
-	text-align: center;
-	background: #4c8d18; /* Old browsers */
-background: -webkit-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
-background: -o-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
-background: linear-gradient(to top right, #4c8d18 0%, #75dc24 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c8d18', endColorstr='#75dc24',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-
-nav .teaminfo .nav_stats > li img {
-	height:3vh;
-	display:inline-block;
-	padding: 0 0;
-	margin: 0 0;
-}
-nav .teaminfo .nav_stats li span {
-	float:right;
-	color:white;
-	font-size: .8em;
-	line-height: 3vh;
-	vertical-align: middle;
-	display:inline-block;
-	
-}
-
-nav .main-nav{
-	background-color: blue;
-	display:flex;
-	flex-direction: column;
-}
-
-
-
-
-nav .main-nav > * {
-	text-align: center;
-	flex:2 25%;
-}
-nav .main-nav > li > a {
-	display:block;
-	text-decoration: none;
-	color:white;
-	position:relative;
-	text-align: center;
-	font-size: 1em;
-	box-sizing: border-box;
-}
-nav .main-nav > li > a > * {
-	position:relative;
-
-	margin: 0 0;
-
-}
-
-nav .main-nav > li a img {
-	text-align: center;
-	margin-top:1em;
-	
-}
-nav .main-nav > li a p {
-	
-	padding: 0 0;
-	margin: 0 0;
-}
-
-
-
-nav > .main-nav > li:nth-of-type(1) {
-	background-color: #2E282A
-}
-nav > .main-nav > li:nth-of-type(2) {
-	background-color: #353031
-}
-nav > .main-nav > li:nth-of-type(3) {
-	background-color: #383838
-}
-nav > .main-nav > li:nth-of-type(4) {
-	background-color: #40383A
-}
-
-nav .sub-nav {
-	display:flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: stretch;
-}
-
-nav .sub-nav li {
-	flex: 3 33%;
-	text-align: center;
-	box-sizing: border-box;
-}
-nav .sub-nav li a {
-	display:block;
-	color:white;
-	text-decoration: none;
-	background: #4c8d18; /* Old browsers */
-background: -webkit-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
-background: -o-linear-gradient(bottom left, #4c8d18 0%, #75dc24 100%);
-background: linear-gradient(to top right, #4c8d18 0%, #75dc24 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c8d18', endColorstr='#75dc24',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
-}
-
-nav .sub-nav img {
-	height:1.2em;
-	padding:.5em .2em .2em .2em;
-	flex:1 100%;
-	margin:0 0;
-}
-nav .sub-nav li  p {
-	flex:1 100%;
-	margin-top:0;
-	font-size: .8em;
-
-}
-nav .sub-nav li a {
-	text-decoration: none;
-	color:white;
-	display:block;
-	display:flex;
-	flex-direction: column;
-}
-
-
-.overlay {
-	background-color: rgba(0,0,0)
-	 -webkit-transition: background-color .5s ease-in-out;
-    transition: background-color .5s ease-in-out;
-}
-.donker {
-	background-color: rgba(0,0,0,.5) !important;
-	position:fixed;
-	left:0;
-	top:0;
-	width:100vw;
-	height:100vh;
-
-	z-index: 1
-}
-.template-container-doelwit.omlaag {
+/*.template-container-doelwit.omlaag {
 	top:0px;
 }
 
@@ -687,7 +627,7 @@ nav .sub-nav li a {
 }
 
 /*doelwit slider*/
-.template-container-doelwit {
+/*.template-container-doelwit {
 	z-index: 5;
 	position:fixed;
 	top:-120vh;
@@ -730,7 +670,7 @@ nav .sub-nav li a {
 .template-container-doelwit .target_info h3 {
 	padding: 0 0;
 	margin: 0 0;
-}
+}*/
 /*.template-container-doelwit {
 	z-index: 90;
 	position:fixed;
