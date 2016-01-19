@@ -1,19 +1,25 @@
 <template name="challenges">
-	<div class="template-container-challenges">
-	<p>Voltooi challenges om hints over jullie target vrij te spelen</p>
+  <div class="template-container-challenges">
+  <!-- <p>Voltooi challenges om hints over jullie target vrij te spelen</p> -->
 
-	<ul>
-		{{#each challenges}}
-    	<li class="challenge">
-    		<a href="{{pathFor 'challenge'}}" title="">
-    			<div><span>{{punten}}</span></div>
-    			<p>{{name}}</p>
-    			<img src="images/challenge_go_to_icon.svg" alt="">
-    		</a>
-    	</li>
-  	{{/each}}
-	</ul>
-  	
+  <ul>
+    {{#each challenges}}
+
+      <li>
+        <a href="{{pathFor 'challenge'}}" title="">
+         <div class="challenge_info">
+          <p class="challenge_titel">{{name}}</p>
+        <span>{{punten}}</span>
+       </div>
+        <div class="challenge_foto_mask" >
+          <img src={{imagesURLS.[0]}} alt="">
+          <div class="color_overlay"></div>
+        </div>
+      </a>
+      </li>
+    {{/each}}
+  </ul>
+    
   
-	</div>
+  </div>
 </template>

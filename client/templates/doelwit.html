@@ -5,13 +5,16 @@
     </div> -->
 		
 			{{#with images}}
-				<img class="target_foto" src="{{this.url}}" alt="">
+				
+					<!-- <img class="target_foto" src="{{this.url}}" alt=""> -->
+					<img src="/images/voorbeeld_foto_rechtop.jpg" alt="" class="target_foto">
+				
 			{{/with}}
 		
-		<div class="target_info">
+		<!-- <div class="target_info">
 			<h3>{{teamname}},</h3>
 			<p>Dit is jullie target</p>
-		</div>
+		</div> -->
 		<div>
 			<a class="knop" href="{{pathFor 'gevonden'}}">Gevonden</a>
 		</div>

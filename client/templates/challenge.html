@@ -2,17 +2,22 @@
   <div class="template-container-challenge">
 	
 		<!-- {{#if profimage}} -->
-	{{#with profimage}}
+	<div class="challenge_foto">
+		{{#with profimage}}
 			<img src={{this.url}} alt="profimg">
 	{{else}}
 			<img src={{images}} alt="">
 	{{/with}}
+	</div>
 
 	{{#with challenge}}	
-		<h2>{{name}}</h2>		
-		<div><span>{{punten}}</span></div>
+		<div class="kop">
+			<h3>{{name}}</h3>		
+			<span>{{punten}}</span>
+		</div>
 		
 	{{/with}}	
+	<p>Geef toe, je hebt het altijd al gewild. Ga naast een boom staan en wordt een bomen knuffelaar! Maak een foto van een van je teamleden die dit doet, en verdien 5 punten!</p>
 	<input type="file" name="file" id="file" class="myFileInput">
   	<!-- <div class="imageView">
 	  	{{> profileimage }}
@@ -20,8 +25,8 @@
 	  	
   	</div> -->
   	<label for= "file">
-  		<button type="button" class="submitchallenge">submit challenge<img src=/images/lens.svg alt=""></button>
+  		<button type="button" class="submitchallenge">Foto nemen</button>
   	</label>
-  	<button type="button" class="button disabled" disabled="true">Complete Challenge</button>
+  	<button type="button" class="button disabled display_none" disabled="true">Complete Challenge</button>
   </div>
 </template>

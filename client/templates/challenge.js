@@ -32,7 +32,8 @@ Template.challenge.events({
               "profile.image":  fileObj._id//"/cfs/files/images/" +
             };
             Meteor.users.update(userId, {$set: imagesURL});
-            $("button").attr('disabled',false).removeClass("disabled");
+            $("button").attr('disabled',false).removeClass("disabled display_none");
+            $("label button").addClass("uploaded");
           }
         });
      });

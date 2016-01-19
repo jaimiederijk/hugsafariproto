@@ -55,6 +55,27 @@ Template.layout.events({
     $('.overlay').toggleClass("donker");
     $('.target_icon img').removeClass("weg");
 
+
+    $('nav').addClass("inactive");
+    // $('.nav-knop').toggleClass("omhoog");
+    $('.overlay').removeClass("donker");
+     $('.header').removeClass("header_schuif");
+     $('.container').removeClass("body_schuif");
+    // $('.target_icon img').removeClass("weg");
+    
+},
+	'click .target_icon': function() {
+		console.log("go2");
+
+    $('html, body').toggleClass("scrollLock");
+    $(".template-container-doelwit").toggleClass("down");
+    $(".header").toggleClass("down");
+    $(".target_icon").toggleClass("down");
+    $(".container").toggleClass("down");
+    // $('.overlay').toggleClass("donker");
+    // $('.target_icon img').toggleClass("target_icon_down");
+    // $('.template-container-doelwit').toggleClass("omlaag");
+    
 },
     'click .donker': function() {
         console.log("go")
