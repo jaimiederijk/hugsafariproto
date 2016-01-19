@@ -1,12 +1,14 @@
 <template name="layout">
+{{#HammerTouchArea gestureMap=templateGestures}}
 	<header>
 
 		  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 		  
 		<div class="subheader">{{> doelwit }}</div>
-		{{#if currentUser}}
-			<div class="target_icon"><img src="/images/target_icon.svg" alt=""></div>
-		{{/if}}
+		
+			{{#if currentUser}}
+				<div class="target_icon"><img src="/images/target_icon.svg" alt=""></div>
+			{{/if}}
 
 		<div class="header">
 			{{#if currentUser}}
@@ -54,7 +56,6 @@
 
 		</nav>
 
-
 	</header>
 	<div class="overlay"></div>
 	<div class="container">
@@ -67,4 +68,5 @@
 			{{> yield}}
 		</div>
 	</div>
+{{/HammerTouchArea}}
 </template>

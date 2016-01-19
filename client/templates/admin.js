@@ -19,7 +19,7 @@ Template.admin.events({
   		for (var t = 1; t < teams.length; t++) {
   			if (assignedTarget.indexOf(teams[t]._id)===-1) { // is niet target
 	  			if (teams[t]._id!=teams[i]._id) {				// target is niet dit team
-	  				if (teams[t].targetteamID!=teams[i]._id) {	// tatgets target is not team 
+	  				if (teams[t].targetteamID!=teams[i]._id) {	// tatgets target is not team
 	  					targetID = teams[t]._id
 	  					break
 	  				};

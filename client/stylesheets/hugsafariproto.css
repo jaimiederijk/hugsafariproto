@@ -16,7 +16,9 @@ groen: #79E425;
 	- coach marks
 
 */
-
+svg {
+	width:100%
+}
 
 /*standaard --- Roos*/
 body, html {

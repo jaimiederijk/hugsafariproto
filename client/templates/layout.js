@@ -1,3 +1,5 @@
+
+
 Template.layout.helpers({
   punten:function(){
     var teamId = Meteor.user().profile.teamid
@@ -25,6 +27,13 @@ Template.layout.helpers({
         return i
     };
   }
+  // templateGestures: {
+  //   'swipeleft .target_icon': function (event, templateInstance) {
+  //     // event.preventDefault();
+  //     console.log("go2")
+
+  //   }
+  // }
 });
 
 Template.layout.events({
@@ -36,20 +45,12 @@ Template.layout.events({
     $('.target_icon img').toggleClass("weg");
     
 },
-'click .main-nav li a': function() {
+  'click .main-nav li a': function() {
     console.log("go");
     $('nav').toggleClass("inactive");
     $('.nav-knop').toggleClass("omhoog");
     $('.overlay').toggleClass("donker");
     $('.target_icon img').removeClass("weg");
-    
-},
-	'click .target_icon': function() {
-		console.log("go2")
-    $('.overlay').toggleClass("donker");
-    $('.target_icon img').toggleClass("target_icon_down");
-    $('.template-container-doelwit').toggleClass("omlaag");
-    
 },
     'click .donker': function() {
         console.log("go")
@@ -62,3 +63,6 @@ Template.layout.events({
 }
 });
 
+// Template.layout.gestures({
+
+// })
