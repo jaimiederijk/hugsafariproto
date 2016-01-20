@@ -6,13 +6,12 @@
 		  
 		<div class="subheader">{{> doelwit }}</div>
 		
-			{{#if currentUser}}
-				<div class="target_icon"><img src="/images/target_icon.svg" alt=""></div>
-			{{/if}}
+			
 
 		<div class="header">
 			{{#if currentUser}}
 				<img class="nav-knop" src="/images/icon_hamburger2.png" alt="">
+				<div class="target_icon"><img src="/images/target_icon.svg" alt=""></div>
 			{{/if}}
 			<!-- <span class="titel">{{paginatitel}}</span> -->
 			<p class="punten"><span>|</span>{{ punten }} punten<span>|</span></p>
@@ -56,16 +55,6 @@
 		</nav>
 
 	</header>
-
-	<div class="target-div-container open">
-		
-			{{> doelwit }}
-		
-		{{#if currentUser}}
-		<div class="target_icon"><a href="#target_link"><img src="/images/target_icon_blue2.svg" alt=""></a></div>
-		{{/if}}
-
-	</div>
 	<div class="overlay"></div>
 	<div class="container">
 

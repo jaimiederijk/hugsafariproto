@@ -237,6 +237,10 @@ background-color: #25DAE4;
 
 }
 /* ========================== Target =====================*/
+.subheader {
+	background-color: black;
+	height:0;
+}
 .target_icon {
 	position:fixed;
 	width:50vw;
@@ -273,7 +277,6 @@ background-color: #25DAE4;
 }
 
 .target-div-container {
-	
 	height:0;
 }
 .template-container-doelwit {
