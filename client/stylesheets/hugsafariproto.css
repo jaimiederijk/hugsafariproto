@@ -276,12 +276,24 @@ background-color: #25DAE4;
 
 }
 
-.header .nav-knop {
+.header .nav-knop  {
 	position:fixed;
 	left:1.5em;
 	height:1.2em;
 	width:0.8em;
 }
+
+.header .back_icon {
+
+}
+
+.header .back_icon img{
+	width: 50px;
+	position: fixed;
+    left: 5px;
+    top: 5px;
+}
+
 .header .punten {
 	margin: 0 0;
 	text-align: right;

@@ -20,6 +20,13 @@ Template.layout.helpers({
   teams: function(){
     return Teams.find({},{sort:{Score:-1}})
   },
+  checkPage: function(){
+    if(this.punten) {
+      return false;
+    } else {
+      return true;
+    }     
+  },
   leaderbordpositie:function(index) {
     var teamId = Meteor.user().profile.teamid
     var i=index+1
@@ -34,6 +41,7 @@ Template.layout.helpers({
 
   //   }
   // }
+
   
 });
 

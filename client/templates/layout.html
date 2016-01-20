@@ -10,11 +10,15 @@
 
 		<div class="header">
 			{{#if currentUser}}
-				<div class="menu nav-knop">
-				  <span class="menu-global menu-top"></span>
-				  <span class="menu-global menu-middle"></span>
-				  <span class="menu-global menu-bottom"></span>
-				</div>
+				{{#if checkPage}}
+					<div class="menu nav-knop">
+					  <span class="menu-global menu-top"></span>
+					  <span class="menu-global menu-middle"></span>
+					  <span class="menu-global menu-bottom"></span>
+					</div>
+				{{else}}
+					<a href="{{pathFor 'challenges'}}"><div class="back_icon"><img src="/images/ic_arrow_back.png" alt=""></div></a>
+				{{/if }}
 				<!-- <img class="" src="/images/icon_hamburger2.png" alt=""> -->
 				<div class="target_icon"><img src="/images/target_icon_blue.svg" alt=""></div>
 			{{/if}}
