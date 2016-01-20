@@ -684,7 +684,7 @@ nav span.lijn {
 /* ================================== Challenge detail pagina ====== */
 .template-container-challenge {
 	margin: 0 0;
-	padding: 8vh 0;
+	padding: 0 0;
 	 -moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width:100%;
@@ -697,18 +697,20 @@ nav span.lijn {
 	box-sizing: border-box;
 	height:70vh;
 	margin: 0 0;
+	margin-bottom:1em;
 	display:block;
 	overflow:hidden;
 	position:relative;
 	
 }
 .template-container-challenge > .challenge_foto  img {
-	max-width: 100%;
-	min-height:100%;
+	min-width: 100%;
+	max-height:100%;
+	height:100%;
 	height:auto;
 	left:0;
-	top:-20%;
 	position:absolute;
+
 }
 
 
@@ -746,7 +748,6 @@ nav span.lijn {
 	vertical-align: middle;
 	color:#e67e22;
 	font-size: 1.8em;
-	padding:.2em 0;
 	display:flex;
 	justify-content: space-around;
 }
@@ -830,11 +831,142 @@ nav span.lijn {
 	background-color:#E37E22;
 }
 
+/* ================= startpagina ========== */
+.template-container-home {
+}
+.template-container-home h1 {
+	font-size: 3em;
+	text-transform: none;
+	text-align: left;
+	width:80%;
+	margin: 0 auto;
+	padding: 0 0;
+}
+.template-container-home h1 span {
+	color:#25DAE4;
+}
+.template-container-home h5 {
+	color:#25DAE4;
+	padding: 0 0;
+	margin: 0  auto;
+	padding-left:.5em;
+	width:80%;
+}
+#login {
+	width:80%;
+	margin: 0 auto;
+}
+/* ================= teams inlog/aansluiten start ========== */
+.template-container-teamsInlog {
+
+	width:100%;
+	display:block;
+	position:absolute;
+	bottom:20vh;
+}
+.template-container-teamsInlog ul {
+	width:80%;
+	margin:0 auto;
+	
+
+}
+.template-container-teamsInlog ul li a {
+	text-decoration: none;
+	display:block;
+
+	border:5px solid black;
+	padding:.5em 2em;
+	text-align: center;
+	color:black;
+	background-color: white;
+	margin:.5em auto;
+}
+/* ================= team aanmelden ========== */
+.template-container-teamAanmelden {
+	height:100%;
+	text-align: center;
+}
+
+
+
+
+.noImage {
+	display:flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	justify-content: center;
+	width:80vw;
+	height:80vw;
+	border:10px solid white;
+	background:url(/images/foto_achtergrond_tekst2.png);
+	background-size: 100% 100%;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	margin:.5em auto;
+	text-align: center;
+	position:relative;
+}
+.imageView .icon_camera {
+	width:100%;
+	padding:0 40%;
+	box-sizing: border-box;
+}
+.noImage p {
+	text-transform: none;
+	font-size: .8em;
+	padding:0 1em;
+}
+
+.teamAanmelden_knoppen {
+	position:absolute;
+	bottom:7vh;
+	width:100%;
+
+}
+.template-container-teamAanmelden input, .template-container-teamAanmelden button, .saveTeam {
+	border:5px solid black;
+	background-color: white;
+	width:80%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display:block;
+	padding:.5em 0;
+	text-align: center;
+	font-size: 1em;
+	margin-top:1em;
+	font-family: "DINPro";
+	text-transform: uppercase;
+	
+}
+
+.template-container-teamAanmelden button.disabled {
+	background-color: #9A9A9A;
+	color:#E8E8E8;
+	border-color:#838383;
+}
+.uploaded_container img{
+	height:80vw;
+	display:block;
+	box-sizing: border-box;
+	border:10px solid white;
+	background:url(/images/foto_achtergrond_tekst2.png);
+	background-size: 100% 100%;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+	margin:.5em auto;
+	text-align: center;
+	position:relative;
+	overflow:hidden;
+}
+
 /* ================= gevonden pagina ========== */
 .template-container-gevonden {
 	border:1px solid red;
 }
-.template-container-gevonden
+
+
 
 
 
@@ -845,7 +977,7 @@ nav span.lijn {
 /* / voor de images! 
 
 */
-
+/*
 .template-container-home {
 	margin: 0 0;
 	padding: 0 0;
@@ -910,11 +1042,11 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
 
 .go_to_aanmeld img {
 	width:2em;
-	-ms-transform: rotate(180deg); /* IE 9 */
-    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+	-ms-transform: rotate(180deg); /* IE 9 */ /*
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera *//*
     transform: rotate(180deg);
 }
-/*Team aanmelden formulier --- Roos*/
+/*Team aanmelden formulier --- Roos*//*
 .template-container-teamAanmelden {
 	background:url(/images/teamAanmelden_bg.svg);
 	background-size: 100% auto;
@@ -969,7 +1101,7 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
 	text-align: center;
 	
 }
-/*Team aanmelden: Teamleden ---Roos*/
+/*Team aanmelden: Teamleden ---Roos*/ /*
 .template-container-teamToevoegen {
 	box-sizing: border-box;
 	min-height:100vh;
@@ -994,7 +1126,7 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
 }
-
+*/
 
 /*.template-container-doelwit.omlaag {
 	top:0px;
