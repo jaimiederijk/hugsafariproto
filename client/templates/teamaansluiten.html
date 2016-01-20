@@ -1,7 +1,12 @@
 <template name="teamAansluiten">
-	{{#each teams}}
-		<div class="button" value={{_id}}>
-			{{teamName}}
-		</div>
+	<div class="template_teamaansluiten_cotainer">
+		<p>Klik op een teamnaam om je hierbij aan te sluiten</p>
+		<ul>
+			{{#each teams}}
+		<li class="button" value={{_id}}>
+			{{teamName}}</li>
 	{{/each}}
+		</ul>
+		
+	</div>
 </template>
