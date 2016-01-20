@@ -44,6 +44,7 @@ Template.challenge.events({
       var points = this.punten
       var challengeData = {
       "challenges":{  createdBy: Meteor.userId(),
+                        challengeid:challengeID,
                         createdAt: new Date(),
                         image:"/cfs/files/images/" + Meteor.user().profile.image,
                         punten:points
