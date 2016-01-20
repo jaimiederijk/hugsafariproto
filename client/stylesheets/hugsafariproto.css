@@ -339,6 +339,7 @@ background-color: #25DAE4;
 	left:81vw !imp;
 }
 .container {
+	padding-top:6vh;
 	-webkit-transition: -webkit-transform 0.2s ease-in-out, top .2s ease-in-out;
   	-moz-transition: -moz-transform 0.2s ease-in-out, top .2s ease-in-out;
   	transition: transform .2s ease-in-out, top .2s ease-in-out;
@@ -717,11 +718,7 @@ nav span.lijn {
 }
 /* =================  leaderbord ========== */
 
-.template-container-leaderboard {
-	
-	margin-top:5.5vh;
 
-}
 .template-container-leaderboard .button_leaderboards {
 	display:flex;
 	border:5px solid black;
@@ -741,11 +738,8 @@ nav span.lijn {
 	color:white;
 }
 
-.leaderbordlist {
-
-}
 .leaderbordlist > ul {
-
+	margin:0 0;
 }
 .leaderbordlist >ul > li {
 	height:25vh;
@@ -794,6 +788,16 @@ nav span.lijn {
 .leaderbordlist.gevondenlist > ul >li > ul > span {
 	background-color:#E37E22;
 }
+
+/* ================= gevonden pagina ========== */
+.template-container-gevonden {
+	border:1px solid red;
+}
+.template-container-gevonden
+
+
+
+
 /* =================  Vanaf hier wordt het kut ========== */
 
 /*startpagina ---- Roos*/
@@ -912,7 +916,7 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
 	display:block;
 	text-align: center;
 }
-.imageView img {
+.imageView img:not(".icon_camera") {
 	width:80vw;
 	border:10px solid white;
 	background:url(/images/foto_achtergrond_tekst2.png);
@@ -1041,26 +1045,5 @@ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
 }
 */
 
-nav .teaminfo div img {
-	
-}
-
-nav .teaminfo div {
-	
-   
-}
 
 
-
-.template-container-gevonden {
-	
-	margin: 0 0;
-	padding: 5vh 0;
-	background-image: url(/images/gevonden_bg.svg);
-	background-size: cover;
-	 -moz-box-sizing: border-box;
-	box-sizing: border-box;
-	width:100%;
-	min-height:100vh;
-	
-}

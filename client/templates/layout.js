@@ -70,13 +70,16 @@ Template.layout.events({
     $('.overlay').removeClass("donker");
      $('.header').removeClass("header_schuif");
      $('.container').removeClass("body_schuif");
-
-   
-    // $('.target_icon img').removeClass("weg");
-    
+},
+'click .template-container-doelwit a' : function() {
+  $('html, body').removeClass("scrollLock");
+  $(".template-container-doelwit").removeClass("down");
+  $(".header").removeClass("down");
+  $(".target_icon").removeClass("down");
+  $(".container").removeClass("down");
 },
 	'click .target_icon': function() {
-      $('html, body').toggleClass("scrollLock");
+    $('html, body').toggleClass("scrollLock");
     $(".template-container-doelwit").toggleClass("down");
     $(".header").toggleClass("down");
     $(".target_icon").toggleClass("down");
