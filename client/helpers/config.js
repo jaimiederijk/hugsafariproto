@@ -101,3 +101,81 @@ Meteor.subscribe('challenges', function() {
 		})
 	};
 })
+
+Meteor.subscribe('hints', function() {
+	if (Hints.find().count()<=0) {
+		//repeat this part for more challenges
+		Hints.insert({
+			createdAt: new Date(),
+			name:"Camping",
+			tip:"De Koog",
+			punten:5
+		})
+		Hints.insert({
+			createdAt: new Date(),
+			name:"Locatie",
+			tip:"N-gebouw",
+			punten:30
+		})
+		Hints.insert({
+			createdAt: new Date(),
+			name:"Voorstelling",
+			tip:"De Koog",
+			punten:10
+		})
+		Hints.insert({
+			createdAt: new Date(),
+			name:"Selfie",
+			tip:"De Koog",
+			punten:10
+		})
+		Hints.insert({
+			createdAt: new Date(),
+			name:"Vraag",
+			tip:"De Koog",
+			punten:20
+		})
+		Hints.insert({
+			createdAt: new Date(),
+			name:"Camping",
+			tip:"De Koog",
+			punten:5
+		})
+		Hints.insert({
+			createdAt: new Date(),
+			name:"Camping",
+			tip:"De Koog",
+			punten:5
+		})
+			Hints.insert({
+			createdAt: new Date(),
+			name:"Camping",
+			tip:"De Koog",
+			punten:5
+		})		
+		Hints.insert({
+			createdAt: new Date(),
+			name:"Camping",
+			tip:"De Koog",
+			punten:5
+		})		
+		Hints.insert({
+			createdAt: new Date(),
+			name:"Camping",
+			tip:"De Koog",
+			punten:5
+		})		
+		Hints.insert({
+			createdAt: new Date(),
+			name:"Camping",
+			tip:"De Koog",
+			punten:5
+		})
+		Hints.insert({
+			createdAt: new Date(),
+			name:"Camping",
+			tip:"De Koog",
+			punten:5
+		})		
+	};
+})

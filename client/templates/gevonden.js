@@ -35,7 +35,7 @@ Template.gevonden.events({
    'click .button': function(event, template) {
       var teamId = Meteor.user().profile.teamid
       var number = Teams.findOne(teamId).foundtargets.length
-      var targetTeam = "targetid"//Teams.findOne(teamId).targetteamID  !!!!!!!!!uncomment
+      var targetTeam = Teams.findOne(teamId).targetteamID
              // handle success depending what you need to do
             //var userId = Meteor.userId();
       var foundData = {

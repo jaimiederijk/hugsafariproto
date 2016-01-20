@@ -14,12 +14,26 @@
       <h3>Hints</h3>
     
       <ul class="hints-list">
-        <li  class="hint-done"><a href="#">
-            <p>Camping</p>
-            <span>De Koog</span>
+      {{#each hints}}
+        {{#if checkHint }}
+          <li id={{_id}}  class="{{checkHint}}">
+          <a href="#">
+            <p>{{name}}</p>
+              <span>{{tip}}</span>         
           </a>
         </li>
-         <li><a href="#">
+        {{else}}
+          <li id={{_id}} class="{{checkPoints}}">
+          <a href="#">
+            <p>{{name}}</p>
+            <span>| {{punten}} |</span>
+          </a>
+        </li>
+        {{/if}}
+        
+      
+      {{/each}}
+ <!--         <li><a href="#">
             <p>Locatie</p>
             <span>| 30 |</span>
           </a>
@@ -73,7 +87,7 @@
             <p>Selfie</p>
             <span>| 15 |</span>
           </a>
-        </li>
+        </li> -->
       </ul>
     </div> 
   </div>

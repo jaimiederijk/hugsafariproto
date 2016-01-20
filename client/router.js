@@ -6,6 +6,7 @@ Router.configure({
       Meteor.subscribe('teams'),
       Meteor.subscribe('challenges'),
       Meteor.subscribe('userList'),
+      Meteor.subscribe('hints'),
       Meteor.subscribe('images')
       ];
 	}
@@ -49,6 +50,9 @@ Router.route('/challenges', {name: 'challenges',
 });
 
 Router.route('/challenges/:_id/challenge', {name: 'challenge',
+  waitOn: function () {
+    return Meteor.subscribe('hints')
+  },
 	data: function() { return Challenges.findOne(this.params._id); }
 });
 
