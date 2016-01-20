@@ -45,7 +45,14 @@ Template.layout.events({
     $('.container').toggleClass("body_schuif");
     $('.header').toggleClass("header_schuif");
 
-     $('html, body').removeClass("scrollLock");
+    if (!$('nav').hasClass("inactive")) {
+      $('html, body').addClass("scrollLock");
+      console.log("lock")
+    }
+    else {
+      $('html, body').removeClass("scrollLock");
+    }
+    
     $(".template-container-doelwit").removeClass("down");
     $(".header").removeClass("down");
     $(".target_icon").removeClass("down");
@@ -59,6 +66,7 @@ Template.layout.events({
     $('.nav-knop').toggleClass("omhoog");
     $('.overlay').toggleClass("donker");
     $('nav').addClass("inactive");
+    $('html, body').removeClass("scrollLock");
     $('.overlay').removeClass("donker");
      $('.header').removeClass("header_schuif");
      $('.container').removeClass("body_schuif");
@@ -85,6 +93,7 @@ Template.layout.events({
     // $('.target_icon img').removeClass("target_icon_down");
     // $('.template-container-doelwit').removeClass("omlaag");
     $('nav').addClass("inactive");
+    $('html, body').removeClass("scrollLock");
     // $('.nav-knop').removeClass("omhoog");
     // $('.target_icon img').toggleClass("weg");
     $('.container').removeClass("body_schuif");
