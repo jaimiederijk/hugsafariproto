@@ -283,10 +283,6 @@ background-color: #25DAE4;
 	width:0.8em;
 }
 
-.header .back_icon {
-
-}
-
 .header .back_icon img{
 	width: 50px;
 	position: fixed;
@@ -392,6 +388,21 @@ background-color: #25DAE4;
 	text-align: center;
 
 }
+/*========= template-container-bevestigfound ============*/
+.template-container-bevestigfound h3 {
+	text-align: center;
+}
+.template-container-bevestigfound a {
+	text-decoration: none;
+}
+.template-container-bevestigfound img {
+	width: 100%;
+}
+.template-container-bevestigfound button {
+	width: 90%;
+    margin: auto;
+}
+
 /*========= Navigatie animatie & veranderende classes ============*/
 .scrollLock {
 	overflow:hidden;

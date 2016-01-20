@@ -1,0 +1,16 @@
+<template name="confirmfound">
+	<div class="template-container-bevestigfound">
+		<h3>Volgende Doelwit</h3>
+		<div>
+			{{#with images}}
+				
+					<img class="target_foto" src="{{this.url}}" alt="">
+					<!-- <img src="/images/voorbeeld_foto_rechtop.jpg" alt="" class="target_foto"> -->
+				
+			{{/with}}
+
+		</div>
+	
+  		<a href="{{pathFor 'targetPagina'}}"><button type="button" class="button">Vind volgende doelwit</button></a>
+	</div>
+</template>

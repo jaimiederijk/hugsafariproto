@@ -49,6 +49,10 @@ Router.route('/challenges', {name: 'challenges',
   data: function() { return {"name":"Challenges"} }
 });
 
+Router.route('/confirmfound', {name: 'confirmfound',
+  data: function() { return {"name":"confirmfound"} }
+});
+
 Router.route('/challenges/:_id/challenge', {name: 'challenge',
   waitOn: function () {
     return Meteor.subscribe('hints')

@@ -12,6 +12,11 @@ Template.targetPagina.helpers({
 			return "/images/notarget.png";
 		}
 	},
+	teamfoto:function(){
+   		var teamId = Meteor.user().profile.teamid
+    	var teamImg = Teams.findOne(teamId).imagesURL
+    	return Images.findOne(teamImg)
+  	},
 	teamname: function () {
 		return Teams.findOne(Meteor.user().profile.teamid).teamName;
 	},
