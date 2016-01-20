@@ -57,8 +57,11 @@ Template.layout.events({
     $(".header").removeClass("down");
     $(".target_icon").removeClass("down");
     $(".container").removeClass("down");
-
     
+    $('.menu-top').toggleClass('menu-top-click');
+    $('.menu-middle').toggleClass('menu-middle-click');
+    $('.menu-bottom').toggleClass('menu-bottom-click'); 
+  
 },
   'click .main-nav li a': function() {
     console.log("go");

@@ -26,7 +26,6 @@ blauw: #25DAE4;
   
 }
 
-
 svg {
 	width:100%
 }
@@ -109,6 +108,48 @@ label * {
 .disabled {
 	color: #635757;
     background-color: grey;
+}
+
+/*menu */
+.menu {
+  cursor: pointer;
+  margin: 0 auto;
+  padding-left: 1.25em;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.menu-global {
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  border-top: 4px solid black;
+  width: 100%;
+  transition: 0.55s;
+}
+.menu-top {
+  top: 0;
+}
+.menu-middle {
+  top: 12px;
+}
+.menu-bottom {
+  top: 24px;
+}
+.menu-top-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(50deg);
+  transition: 0.55s 0.5s;
+}
+.menu-middle-click {
+  opacity: 0;
+}
+.menu-bottom-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(-410deg);
+  transition: 0.55s 0.5s;
 }
 
 /* ===================    Overzichtspagina (targetpage.html) ====== */
@@ -232,7 +273,7 @@ background-color: #25DAE4;
 	position:fixed;
 	left:1.5em;
 	height:1.2em;
-	width:1.5em;
+	width:0.8em;
 }
 .header .punten {
 	margin: 0 0;
