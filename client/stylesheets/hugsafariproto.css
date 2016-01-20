@@ -19,6 +19,14 @@ blauw: #25DAE4;
 	- coach marks
 
 */
+
+@font-face{
+    font-family: "DINPro";
+    src: url('/fonts/DINPro-Regular.otf'),
+  
+}
+
+
 svg {
 	width:100%
 }
@@ -257,8 +265,8 @@ background-color: #25DAE4;
 	vertical-align: middle;  
     -webkit-transition:bottom .5s ease-in-out;
     transition:bottom .5s ease-in-out;
-	height:4vh;
-	width:4vh;
+	width:.5em;
+	height:1em;
 	-ms-transform: rotate(180deg); /* IE 9 */
     -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
     transform: rotate(180deg);
@@ -707,7 +715,85 @@ nav span.lijn {
 	text-decoration: underline;
 	padding:.6em;
 }
+/* =================  leaderbord ========== */
 
+.template-container-leaderboard {
+	
+	margin-top:5.5vh;
+
+}
+.template-container-leaderboard .button_leaderboards {
+	display:flex;
+	border:5px solid black;
+}
+.template-container-leaderboard .button_leaderboards button {
+	flex:5 50%;
+	border:none;
+	-webkit-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+	background-color: white;
+	color:black;
+	text-transform: uppercase;
+
+}
+.template-container-leaderboard .button_leaderboards .disabled {
+	background-color: #25DAE4;
+	color:white;
+}
+
+.leaderbordlist {
+
+}
+.leaderbordlist > ul {
+
+}
+.leaderbordlist >ul > li {
+	height:25vh;
+	overflow:hidden;
+	position:relative;
+}
+.leaderbordlist > ul > li img {
+	height:auto;
+	width:100%;
+	left:0;
+	top:-20%;
+	position:absolute;
+}
+.leaderbordlist > ul >li > ul {
+	position:absolute;
+	background-color: white;
+	width:100%;
+	z-index: 4;
+	bottom:0;
+	left:0;
+
+}
+.leaderbordlist > ul >li > ul > span {
+	display:inline-block;
+	background-color: #25DAE4;
+	padding:.5em;
+	height:20%;
+
+}
+.leaderbordlist > ul > li > ul > li {
+	display:inline-block;
+}
+.leaderbordlist > ul > li > ul > li:last-of-type {
+	float:right;
+	padding:.5em;
+}
+.leaderbordlist > ul > li > ul > li:last-of-type span {
+	padding: .5em;
+
+	color:#25DAE4;
+}
+.leaderbordlist.gevondenlist > ul > li > ul > li:last-of-type span {
+	color:#E37E22;
+
+}
+.leaderbordlist.gevondenlist > ul >li > ul > span {
+	background-color:#E37E22;
+}
 /* =================  Vanaf hier wordt het kut ========== */
 
 /*startpagina ---- Roos*/

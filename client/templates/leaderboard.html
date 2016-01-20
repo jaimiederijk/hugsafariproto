@@ -1,20 +1,38 @@
 <template name="leaderboard">
-	<button type="button" id="challengesleaderbord" class="disabled" disabled="true">challenges</button>
+	<div class="template-container-leaderboard">
+		<div class="button_leaderboards">
+			<button type="button" id="challengesleaderbord" class="disabled" disabled="true">challenges</button>
 	<button type="button" id="gevondenleaderbord">gevonden</button>
-	<div class="challengelist">
+		</div>
+	<div class="leaderbordlist challengelist">
 		<ul>
 			{{#each challengeTeams}}
-				<li>{{add @index}} team:{{teamName}} totaal: {{points}}</li>
+				<li>
+					<ul> 
+					<span>{{add @index}}</span>
+					<li>{{teamName}}</li>
+					<li>punten<span>{{points}}</span></li>
+				</ul>
+					<img src="/images/test_foto_groep.jpg" alt="">
+				</li>
 			{{/each}}
 		</ul>
 	</div>
-	<div class="gevondenlist displayNone">
+	<div class="leaderbordlist gevondenlist displayNone">
 		<ul>
 			{{#each teams}}
-				<li>{{add @index}} team:{{teamName}} aantal targets:{{findCount}}</li>
+				<li>
+					<ul>
+						<span>{{add @index}}</span>
+						<li>{{teamName}}</li>
+						<li>targets <span>{{findCount}}</span></li>
+					</ul>
+					<img src="/images/test_foto_groep.jpg" alt="">
+				</li>
 
 			{{/each}}
 		</ul>
 		
+	</div>		
 	</div>
 </template>
