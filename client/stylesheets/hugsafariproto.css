@@ -153,6 +153,9 @@ label * {
 }
 
 /* ===================    Overzichtspagina (targetpage.html) ====== */
+.hints-list .hint-disabled a {
+	background-color: rgb(170, 170, 170);
+}
 .template-container-targetPagina {
 	box-sizing: border-box;
 	min-height:100vh;
