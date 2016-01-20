@@ -1,11 +1,13 @@
 <template name="profileimage">
 	  	<label for= "file">
 		  	{{#with images}}
-		      <div>
+		      <div class="uploaded_container">
 		        <img src={{this.url}} />
 		      </div>
 		    {{else}}
 		    	<div class="noImage">
+		    		<img class="icon_camera" src="/images/icon_camera.svg" alt="">
+		    		<p>Klik hier om een foto te maken</p>
 		    	</div>
 			{{/with}}
 		</label>
