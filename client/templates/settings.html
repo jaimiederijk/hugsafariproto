@@ -1,0 +1,8 @@
+<template name="settings">
+	<div class="template-container-settings">
+		<a href="{{pathFor 'home'}}">Home</a>
+		{{#if currentUser}}
+			{{> loginButtons}}
+		{{/if}}
+	</div>
+</template>

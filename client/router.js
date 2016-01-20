@@ -27,6 +27,10 @@ Router.route('/teamAanmelden',{
 Router.route('/', {name: 'home',
   data: function() { return {"name":"Start"} }
 });
+
+Router.route('/settings', {name: 'settings',
+  data: function() { return {"name":"Settings"} }
+});
 //Router.route('/team', {name: 'teamAanmelden'});
 Router.route('/join', {name: 'teamAansluiten',
   data: function() { return {"name":"Aansluiten bij team"} }

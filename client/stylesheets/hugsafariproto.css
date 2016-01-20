@@ -250,6 +250,10 @@ background-color: #25DAE4;
 	box-sizing: border-box;
 
 }
+/* ========================== setting ====================*/
+.template-container-settings {
+	padding-top: 50px;
+}
 
 /* ========================== Header =====================*/
 .header {
