@@ -69,6 +69,11 @@ Template.layout.events({
     $('.nav-knop').toggleClass("omhoog");
     $('.overlay').toggleClass("donker");
     $('nav').addClass("inactive");
+
+    $('.menu-top').removeClass('menu-top-click');
+    $('.menu-middle').removeClass('menu-middle-click');
+    $('.menu-bottom').removeClass('menu-bottom-click'); 
+
     $('html, body').removeClass("scrollLock");
     $('.overlay').removeClass("donker");
      $('.header').removeClass("header_schuif");
@@ -88,6 +93,11 @@ Template.layout.events({
     $(".target_icon").toggleClass("down");
     $(".container").toggleClass("down");
     $('nav').addClass("inactive");
+
+    $('.menu-top').removeClass('menu-top-click');
+    $('.menu-middle').removeClass('menu-middle-click');
+    $('.menu-bottom').removeClass('menu-bottom-click');
+
     $('.overlay').removeClass("donker");
     $('.container').removeClass("body_schuif");
     $('.header').removeClass("header_schuif");
@@ -99,6 +109,11 @@ Template.layout.events({
     // $('.target_icon img').removeClass("target_icon_down");
     // $('.template-container-doelwit').removeClass("omlaag");
     $('nav').addClass("inactive");
+
+    $('.menu-top').removeClass('menu-top-click');
+    $('.menu-middle').removeClass('menu-middle-click');
+    $('.menu-bottom').removeClass('menu-bottom-click');
+
     $('html, body').removeClass("scrollLock");
     // $('.nav-knop').removeClass("omhoog");
     // $('.target_icon img').toggleClass("weg");
