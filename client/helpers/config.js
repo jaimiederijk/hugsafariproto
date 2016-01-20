@@ -109,73 +109,73 @@ Meteor.subscribe('hints', function() {
 			createdAt: new Date(),
 			name:"Camping",
 			tip:"De Koog",
-			punten:5
+			punten:10
 		})
 		Hints.insert({
 			createdAt: new Date(),
 			name:"Locatie",
-			tip:"N-gebouw",
+			tip:"Wersterkeyn",
 			punten:30
 		})
 		Hints.insert({
 			createdAt: new Date(),
 			name:"Voorstelling",
-			tip:"De Koog",
-			punten:10
+			tip:"We doen het allemaal wel zelf <span>12:30</span>",
+			punten:5
 		})
 		Hints.insert({
 			createdAt: new Date(),
 			name:"Selfie",
-			tip:"De Koog",
-			punten:10
+			tip:"Klik hier om de selfie te bekijken",
+			punten:15
 		})
 		Hints.insert({
 			createdAt: new Date(),
 			name:"Vraag",
-			tip:"De Koog",
-			punten:20
+			tip:"Klik hier om de vraag te stellen",
+			punten:5
 		})
 		Hints.insert({
 			createdAt: new Date(),
-			name:"Camping",
+			name:"Voorstelling",
 			tip:"De Koog",
 			punten:5
 		})
 		Hints.insert({
 			createdAt: new Date(),
-			name:"Camping",
+			name:"Voorstelling",
 			tip:"De Koog",
 			punten:5
 		})
 			Hints.insert({
 			createdAt: new Date(),
-			name:"Camping",
-			tip:"De Koog",
-			punten:5
+			name:"Selfie",
+			tip:"Klik hier om de selfie te bekijken",
+			punten:15
 		})		
 		Hints.insert({
 			createdAt: new Date(),
-			name:"Camping",
-			tip:"De Koog",
-			punten:5
+			name:"Selfie",
+			tip:"Klik hier om de selfie te bekijken",
+			punten:15
 		})		
 		Hints.insert({
 			createdAt: new Date(),
-			name:"Camping",
-			tip:"De Koog",
-			punten:5
+			name:"Locatie",
+			tip:"De betonning",
+			punten:30
 		})		
 		Hints.insert({
 			createdAt: new Date(),
-			name:"Camping",
-			tip:"De Koog",
-			punten:5
+			name:"Locatie",
+			tip:"Groene strand",
+			punten:20
 		})
 		Hints.insert({
 			createdAt: new Date(),
-			name:"Camping",
-			tip:"De Koog",
-			punten:5
+			name:"Locatie",
+			tip:"Hartbreak Hotel",
+			punten:20
 		})		
 	};
 })

@@ -153,9 +153,9 @@ label * {
 }
 
 /* ===================    Overzichtspagina (targetpage.html) ====== */
-.hints-list .hint-disabled a {
+/*.hints-list .hint-disabled a {
 	background-color: rgb(170, 170, 170);
-}
+}*/
 .template-container-targetPagina {
 	box-sizing: border-box;
 	min-height:100vh;
@@ -716,7 +716,9 @@ nav span.lijn {
 
 }	
 
-
+.challenge_done {
+	z-index: 2;
+}
 
 /* ================================== Challenge detail pagina ====== */
 .template-container-challenge {
@@ -1025,10 +1027,23 @@ nav span.lijn {
 }
 /* ================= gevonden pagina ========== */
 .template-container-gevonden {
-	border:1px solid red;
+	
+}
+.template-container-gevonden button {
+	width:80vw;
+	background-color: white;
+	border:5px solid black;
+	color:black;
+	text-transform: uppercase;
+	margin:0 auto;
+	margin-top:5em;
 }
 
-
+.template-container-gevonden button.disabled {
+	background-color: #BDBDBD;
+	border-color:#8C8C8C;
+	color:#DBDBDB;
+}
 
 
 
