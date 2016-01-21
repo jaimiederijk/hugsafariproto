@@ -2,11 +2,9 @@
 {{#HammerTouchArea gestureMap=templateGestures}}
 	<header>
 
-		  <meta name="viewport" content="width=device-width,initial-scale=1" />
-		  
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+
 		<div class="subheader">{{> doelwit }}</div>
-		
-			
 
 		<div class="header">
 			{{#if currentUser}}
@@ -20,7 +18,9 @@
 					<a href="{{pathFor 'challenges'}}"><div class="back_icon"><img src="/images/ic_arrow_back.png" alt=""></div></a>
 				{{/if }}
 				<!-- <img class="" src="/images/icon_hamburger2.png" alt=""> -->
-				<div class="target_icon"><img src="/images/target_icon_blue.svg" alt=""></div>
+				{{#if checkPageTarget}}
+					<div class="target_icon"><img src="/images/target_icon_blue.svg" alt=""></div>
+				{{/if }}
 			{{/if}}
 			<!-- <span class="titel">{{paginatitel}}</span> -->
 			<p class="punten"><span>|</span>{{ punten }} punten<span>|</span></p>

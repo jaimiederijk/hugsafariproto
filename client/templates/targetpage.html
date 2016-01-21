@@ -1,11 +1,10 @@
 <template name="targetPagina">
 	<div class="template-container-targetPagina">
-    {{#with teamfoto}}
-      <img class="target_foto" src="{{this.url}}" alt="">
-    {{/with}}
-   
+
+      <img class="target_foto" src="{{images}}" alt="">
+
       <!-- dit moet je doelwit worden -->
-    
+
     <ul>
       <li><a class="knop gevonden" href="{{pathFor 'gevonden'}}">Gevonden</a></li>
       <li><a class="knop challenges" href="{{pathFor 'challenges'}}">Challenges</a></li>

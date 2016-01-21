@@ -1,3 +1,36 @@
+Template.targetPagina.rendered = function() {
+  this.autorun(function() {
+
+    var tour = new Tour({
+      steps: [
+      {
+        element: ".template-container-targetPagina .target_foto",
+        title: "Doelwit",
+        //container:".container",
+        placement: 'bottom',
+        content: "Dit is jouw doelwit."
+      },
+      {
+        element: ".hints h3",
+        container:".hints",
+        title: "Hints",
+        content: "Spendeer de punten die je verdient met challenges aan hints over je doelwit."
+      }
+      ,
+      {
+        element: ".nav-knop",
+        container:".header",
+        title: "Menu",
+        content: "Navigeer de app doormiddel van dit menu."
+      }
+    ]});
+    tour.init(true);
+
+    // Start the tour
+    tour.start(true);
+
+  })
+};
 Template.targetPagina.helpers({
 	hints: function () {
 	  return Hints.find()

@@ -25,7 +25,14 @@ Template.layout.helpers({
       return false;
     } else {
       return true;
-    }     
+    }
+  },
+  checkPageTarget: function(){
+    if(this.punten||this.name==="Hugsafari") {
+      return false;
+    } else {
+      return true;
+    }
   },
   leaderbordpositie:function(index) {
     var teamId = Meteor.user().profile.teamid
