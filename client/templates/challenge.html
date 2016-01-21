@@ -1,6 +1,6 @@
 <template name="challenge">
   <div class="template-container-challenge">
-	
+
 		<!-- {{#if profimage}} -->
 	<div class="challenge_foto">
 		{{#with profimage}}
@@ -10,24 +10,24 @@
 	{{/with}}
 	</div>
 
-	{{#with challenge}}	
+	{{#with challenge}}
 		<div class="kop">
-			<h3>{{name}}</h3>		
+			<h3>{{name}}</h3>
 			<span>{{punten}}</span>
 		</div>
-		
-	{{/with}}	
+
 	<p>{{text}} Maak een foto van een van je teamleden die dit doet, en verdien {{punten}} punten!</p>
+	{{/with}}
 	<input type="file" name="file" id="file" class="myFileInput">
   	<!-- <div class="imageView">
 	  	{{> profileimage }}
 
-	  	
+
   	</div> -->
   		<button type="button" class="button disabled display_none" disabled="true">Complete Challenge</button>
   		<label for= "file">
   		<button type="button" class="submitchallenge">Foto nemen</button>
   	</label>
-  
+
   </div>
 </template>
