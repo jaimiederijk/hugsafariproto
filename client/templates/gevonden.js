@@ -67,6 +67,6 @@ Template.gevonden.events({
               "profile.image":  ""
             };
       Meteor.users.update(userId, {$set: imagesURL});
-      Router.go('bevestigfound');
+      Router.go('confirmfound');
    }
 });
