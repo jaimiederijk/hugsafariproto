@@ -9,11 +9,13 @@
 			{{#each challengeTeams}}
 				<li>
 					<ul> 
-					<span>{{add @index}}</span>
+					<li>{{add @index}}</li>
 					<li>{{teamName}}</li>
-					<li>punten<span>{{points}}</span></li>
+					<li>punten <span>| {{points}}</span></li>
 				</ul>
-					<img src="/cfs/files/images/{{imagesURL}}" alt="">
+					<div class="leaderbord_foto_container">
+						<img src="/cfs/files/images/{{imagesURL}}" alt="">
+					</div>
 				</li>
 			{{/each}}
 		</ul>
@@ -23,11 +25,13 @@
 			{{#each teams}}
 				<li>
 					<ul>
-						<span>{{add @index}}</span>
+						<li>{{add @index}}</li>
 						<li>{{teamName}}</li>
-						<li>targets <span>{{findCount}}</span></li>
+						<li>targets <span>| {{findCount}}</span></li>
 					</ul>
-					<img src="/cfs/files/images/{{imagesURL}}" alt="">
+					<div class="leaderbord_foto_container">
+						<img src="/cfs/files/images/{{imagesURL}}" alt="">
+					</div>
 				</li>
 
 			{{/each}}

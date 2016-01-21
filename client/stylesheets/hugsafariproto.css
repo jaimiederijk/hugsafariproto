@@ -816,57 +816,65 @@ nav span.lijn {
 .template-container-leaderboard .button_leaderboards .disabled {
 	background-color: #25DAE4;
 	color:white;
+	text-decoration: underline;
 }
 
 .leaderbordlist > ul {
-	margin:0 0;
+	
+
 }
-.leaderbordlist >ul > li {
+.leaderbordlist > ul > li {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: nowrap;
 	height:25vh;
+	box-sizing: border-box;
+	border:10px solid black;
+	width:80vw;
+	margin:1em auto;
+}
+.leaderbordlist > ul > li > ul {
+	flex:5 50%;
+	box-sizing: border-box;
+	position:relative;
+}
+.leaderbordlist > ul > li > div {
+	flex:5 50%;
+	box-sizing: border-box;
 	overflow:hidden;
 	position:relative;
 }
-.leaderbordlist > ul > li img {
+
+.leaderbordlist > ul > li > div img {
+	position:absolute;
+	width:100%;
 	height:auto;
-	width:100%;
-	left:0;
-	top:-20%;
-	position:absolute;
+	top:-10%;
 }
-.leaderbordlist > ul >li > ul {
-	position:absolute;
-	background-color: white;
-	width:100%;
-	z-index: 4;
-	bottom:0;
-	left:0;
-
-}
-.leaderbordlist > ul >li > ul > span {
-	display:inline-block;
+.leaderbordlist > ul > li > ul > li:first-of-type {
 	background-color: #25DAE4;
+	width:100%;
+	text-align: center;
 	padding:.5em;
-	height:20%;
-
+	font-size: 1.2em;
+	font-weight: 700;
+	color:white;
+	display:block;
 }
 .leaderbordlist > ul > li > ul > li {
-	display:inline-block;
+	font-size: .8em;
+	text-transform: none;
+	text-align: center;
 }
 .leaderbordlist > ul > li > ul > li:last-of-type {
-	float:right;
-	padding:.5em;
+	position:absolute;
+	bottom:5px;
+	left:10vw;
+	text-transform: uppercase;
 }
 .leaderbordlist > ul > li > ul > li:last-of-type span {
-	padding: .5em;
-
 	color:#25DAE4;
-}
-.leaderbordlist.gevondenlist > ul > li > ul > li:last-of-type span {
-	color:#E37E22;
-
-}
-.leaderbordlist.gevondenlist > ul >li > ul > span {
-	background-color:#E37E22;
 }
 
 /* ================= startpagina ========== */
