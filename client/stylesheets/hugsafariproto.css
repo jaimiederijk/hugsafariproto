@@ -203,6 +203,7 @@ label * {
 	
 }
 .hints-list {
+	transition: background-color .2s ease-in-out, border .2s ease-in-out, ;
 	background-color: white;
 	display:flex;
 	padding: 0 0;
@@ -265,6 +266,14 @@ background-color: #25DAE4;
 	display:block;
 	box-sizing: border-box;
 
+}
+.hint-disabled {
+}
+.hint-disabled p {
+	color:#87F8FC;
+}
+.hint-disabled span {
+	color:#1FC3CC;
 }
 /* ========================== setting ====================*/
 .template-container-settings {

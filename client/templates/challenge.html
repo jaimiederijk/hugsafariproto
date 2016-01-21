@@ -17,16 +17,17 @@
 		</div>
 		
 	{{/with}}	
-	<p>Geef toe, je hebt het altijd al gewild. Ga naast een boom staan en wordt een bomen knuffelaar! Maak een foto van een van je teamleden die dit doet, en verdien 5 punten!</p>
+	<p>{{text}} Maak een foto van een van je teamleden die dit doet, en verdien {{punten}} punten!</p>
 	<input type="file" name="file" id="file" class="myFileInput">
   	<!-- <div class="imageView">
 	  	{{> profileimage }}
 
 	  	
   	</div> -->
-  	<label for= "file">
+  		<button type="button" class="button disabled display_none" disabled="true">Complete Challenge</button>
+  		<label for= "file">
   		<button type="button" class="submitchallenge">Foto nemen</button>
   	</label>
-  	<button type="button" class="button disabled display_none" disabled="true">Complete Challenge</button>
+  
   </div>
 </template>
