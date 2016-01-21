@@ -167,9 +167,22 @@ label * {
 	width:80vw;
 	margin-top: 2em;
 }
-.template-container-targetPagina .target_foto {
+.target_page_foto_container {
 	width:100vw;
-	max-height: 80vw;
+	height:80vw;
+	display:block;
+	box-sizing: border-box;
+	position:relative;
+	overflow:hidden;
+}
+.template-container-targetPagina .target_foto {
+	position:absolute;
+	width:auto;
+	top:-20%;
+	min-width: 80vw;
+	width:100%;
+	height:auto;
+	max-height: 80vh;
 }
 .knop {
 	margin:1.2em auto;
